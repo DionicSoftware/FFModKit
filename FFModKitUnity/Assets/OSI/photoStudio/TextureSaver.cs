@@ -12,6 +12,7 @@ public class TextureSaver : MonoBehaviour {
     }
 
     void Start () {
+        renderTextureBig = new RenderTexture(1024, 1024, 24, RenderTextureFormat.ARGB32);
         GetComponent<Camera>().targetTexture = renderTextureBig;
     }
 
