@@ -79,7 +79,7 @@ namespace SourceMod1 {
 
                 // CanvasHandler.Instance gives you access to some UI stuff
                 numberOfClicks++;
-                CanvasHandler.Instance.smallMessagePanel.ShowMessage(hitMessage + " Click number " + numberOfClicks + ".\nPlaytime: " + playtime, 2);
+                CanvasHandler.Instance.smallMessagePanel.ShowMessage(hitMessage + "\nClick number " + numberOfClicks + ". Playtime: " + playtime, 2);
             }
         }
     }
