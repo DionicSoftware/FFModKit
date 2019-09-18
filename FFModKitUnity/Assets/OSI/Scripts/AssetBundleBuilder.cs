@@ -3,11 +3,19 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEditor;
 using System.IO;
+using System.Linq;
 
 public class AssetBundleBuilder {
 
     [MenuItem("Assets/Build Asset Bundle")]
     private static void BuildAssetBundle() {
+        int totalGameObjects;
+        List<ManualShaderChecker.ShaderUsage> manualShaderUsages = ManualShaderChecker.GetShaderUsages(out totalGameObjects);
+
+        if (manualShaderUsages.Any()) {
+            throw new System.Exception("Manual shader is used! This is forbidden because it crashes the game on some graphics cards. Please convert the shader to a texture using the \"Convert to Texture\" tool or use a different shader for the asset, like the ManualSmallShader. Check for Manual Shader usage yourself using the \"Tools\" menu at the top.");
+        }
+
         string path = AssetDatabase.GetAssetPath(Selection.activeObject.GetInstanceID());
         int indexOfLastSlash = path.LastIndexOf('/');
         string folderName = path.Substring(indexOfLastSlash, path.Length - indexOfLastSlash);

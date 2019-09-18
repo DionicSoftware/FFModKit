@@ -18,7 +18,7 @@ public class ManualShaderConverter {
         List<Color> colors = new List<Color>();
         List<float> smoothness = new List<float>();
         List<float> metallic = new List<float>();
-        for (int i=1; i<=16; i++) {
+        for (int i = 1; i <= 16; i++) {
             colors.Add(mat.GetColor("_Color" + i));
             smoothness.Add(mat.GetFloat("_Glossiness" + i));
             metallic.Add(mat.GetFloat("_Metallic" + i));
@@ -29,7 +29,7 @@ public class ManualShaderConverter {
 
         string[] folders = parentFolder.Split('/');
         string newFolder;
-        if (folders[folders.Length-1] == assetName) {
+        if (folders[folders.Length - 1] == assetName) {
             newFolder = parentFolder + "/";
         } else {
             newFolder = parentFolder + "/" + assetName + "/"; // Assets/Shaders/ManualMaterial/
@@ -39,8 +39,8 @@ public class ManualShaderConverter {
 
         // pathSuffix = Shaders/ManualMaterial/ManualMaterial_
         string pathSuffix = newFolder + assetName + "_";
-        
-        string fullPath = Application.dataPath + "/" + pathSuffix.Substring(pathSuffix.IndexOf("/")+1);
+
+        string fullPath = Application.dataPath + "/" + pathSuffix.Substring(pathSuffix.IndexOf("/") + 1);
 
         // Albedo
         Texture2D albedoTex = new Texture2D(4, 4, TextureFormat.ARGB32, false);
@@ -109,4 +109,86 @@ public class ManualShaderConverter {
         return Selection.activeObject != null && Selection.activeObject.GetType() == typeof(Material);
     }
 }
+
+public class ManualShaderChecker {
+    [MenuItem("Tools/Check for Manual Shader Usage")]
+    public static void Check() {
+        Helper.ClearUnityConsole();
+
+        int totalGameObjects;
+        List<ShaderUsage> usages = GetShaderUsages(out totalGameObjects);
+
+        foreach (ShaderUsage usage in usages) {
+            MonoBehaviour.print("Invalid Shader used by " + usage.assetPath + ": " + usage.shaderName + " for material " + usage.materialName);
+        }
+
+        MonoBehaviour.print(usages.Count + " out of " + totalGameObjects + " GameObjects use the manual shader.");
+    }
+
+    public struct ShaderUsage {
+        public string assetPath, shaderName, materialName;
+        public ShaderUsage(string assetPath, string shaderName, string materialName) { this.assetPath = assetPath; this.shaderName = shaderName; this.materialName = materialName; }
+    }
+
+    public static List<ShaderUsage> GetShaderUsages(out int totalGameObjects) {
+        totalGameObjects = 0;
+        List<ShaderUsage> usages = new List<ShaderUsage>();
+
+        string[] guids = AssetDatabase.FindAssets("t: GameObject");
+        for (int i = 0; i < guids.Length; i++) {
+            string assetPath = AssetDatabase.GUIDToAssetPath(guids[i]);
+            var importer = AssetImporter.GetAtPath(assetPath);
+            if (importer == null || !(importer is ModelImporter)) { continue; }
+            ModelImporter modelImporter = importer as ModelImporter;
+            foreach (var kvp in modelImporter.GetExternalObjectMap()) {
+                if (kvp.Value is Material) {
+                    Material mat = (kvp.Value as Material);
+                    string shaderName = mat.shader.name;
+                    if (shaderName.Contains("Manual") && !shaderName.EndsWith("Baked") && !shaderName.Contains("ManualSmall")) {
+                        usages.Add(new ShaderUsage(assetPath, shaderName, mat.name));
+                    }
+                }
+            }
+            totalGameObjects++;
+        }
+        return usages;
+    }
+
+    [MenuItem("Tools/Remove Manual Shader Usage")]
+    public static void Remove() {
+        Helper.ClearUnityConsole();
+
+        int count = 0;
+        int total = 0;
+
+        string[] guids = AssetDatabase.FindAssets("t: GameObject");
+        for (int i = 0; i < guids.Length; i++) {
+            string assetPath = AssetDatabase.GUIDToAssetPath(guids[i]);
+            var importer = AssetImporter.GetAtPath(assetPath);
+            if (importer == null || !(importer is ModelImporter)) { continue; }
+            ModelImporter modelImporter = importer as ModelImporter;
+            List<AssetImporter.SourceAssetIdentifier> remapsToRemove = new List<AssetImporter.SourceAssetIdentifier>();
+            foreach (var kvp in modelImporter.GetExternalObjectMap()) {
+                if (kvp.Value is Material) {
+                    Material mat = (kvp.Value as Material);
+                    string shaderName = mat.shader.name;
+                    if (shaderName.Contains("Manual") && !shaderName.EndsWith("Baked") && !shaderName.Contains("ManualSmall")) {
+                        MonoBehaviour.print("Invalid Shader used by " + assetPath + ": " + shaderName + " for material " + mat.name);
+                        remapsToRemove.Add(kvp.Key);
+                        count++;
+                    }
+                }
+            }
+            foreach (var remap in remapsToRemove) {
+                modelImporter.RemoveRemap(remap);
+                AssetDatabase.WriteImportSettingsIfDirty(assetPath);
+                AssetDatabase.ImportAsset(assetPath, ImportAssetOptions.ForceUpdate);
+            }
+            total++;
+        }
+
+        MonoBehaviour.print(count + " out of " + total + " GameObjects used the manual shader.");
+    }
+}
+
 #endif

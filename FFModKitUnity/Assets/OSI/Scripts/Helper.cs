@@ -38,4 +38,13 @@ public class Helper {
             }
         }
     }
+
+#if UNITY_EDITOR
+    public static void ClearUnityConsole() {
+        var assembly = System.Reflection.Assembly.GetAssembly(typeof(UnityEditor.SceneView));
+        var type = assembly.GetType("UnityEditor.LogEntries");
+        var method = type.GetMethod("Clear");
+        method.Invoke(new object(), null);
+    }
+#endif
 }
