@@ -61,7 +61,7 @@ public class TextureSaver : MonoBehaviour {
     }
 
     private string GetImageDirectory(IconSize iconSize) {
-        string directory = Helper.GetToolkitDirectory() + "Icons/PhotoStudioIcons" + iconSize.ToString() + "/";
+        string directory = ModKitHelper.GetToolkitDirectory() + "Icons/PhotoStudioIcons" + iconSize.ToString() + "/";
 
         DirectoryInfo dirInfo = (new FileInfo(directory)).Directory;
         if (!dirInfo.Exists) {

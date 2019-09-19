@@ -3,7 +3,7 @@ using System.Linq;
 using System;
 using UnityEngine;
 
-public class Helper {
+public class ModKitHelper {
 
     public static string GetToolkitDirectory() {
         string path = Application.dataPath;

@@ -113,7 +113,7 @@ public class ManualShaderConverter {
 public class ManualShaderChecker {
     [MenuItem("Tools/Check for Manual Shader Usage")]
     public static void Check() {
-        Helper.ClearUnityConsole();
+        ModKitHelper.ClearUnityConsole();
 
         int totalGameObjects;
         List<ShaderUsage> usages = GetShaderUsages(out totalGameObjects);
@@ -156,7 +156,7 @@ public class ManualShaderChecker {
 
     [MenuItem("Tools/Remove Manual Shader Usage")]
     public static void Remove() {
-        Helper.ClearUnityConsole();
+        ModKitHelper.ClearUnityConsole();
 
         int count = 0;
         int total = 0;

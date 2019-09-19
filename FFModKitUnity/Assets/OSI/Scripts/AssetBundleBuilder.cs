@@ -21,7 +21,7 @@ public class AssetBundleBuilder {
         string folderName = path.Substring(indexOfLastSlash, path.Length - indexOfLastSlash);
 
         List<Object> assets = new List<Object>();
-        foreach (string filePath in Helper.GetFilesRecursive(path)) {
+        foreach (string filePath in ModKitHelper.GetFilesRecursive(path)) {
             GameObject go = AssetDatabase.LoadAssetAtPath<GameObject>(filePath);
             if (go != null) {
                 assets.Add(go);
@@ -35,9 +35,9 @@ public class AssetBundleBuilder {
         }
 
         string projectPath = Application.dataPath.Substring(0, Application.dataPath.LastIndexOf('/')+1);
-        if (!Directory.Exists(Helper.GetToolkitDirectory() + "BuiltAssetBundles")) { Directory.CreateDirectory(projectPath + "BuiltAssetBundles"); }
+        if (!Directory.Exists(ModKitHelper.GetToolkitDirectory() + "BuiltAssetBundles")) { Directory.CreateDirectory(projectPath + "BuiltAssetBundles"); }
 
-        BuildPipeline.BuildAssetBundle(null, assets.ToArray(), Helper.GetToolkitDirectory() + "BuiltAssetBundles/" + folderName + ".ffasset", BuildAssetBundleOptions.CollectDependencies | BuildAssetBundleOptions.ForceRebuildAssetBundle, BuildTarget.StandaloneWindows64);
+        BuildPipeline.BuildAssetBundle(null, assets.ToArray(), ModKitHelper.GetToolkitDirectory() + "BuiltAssetBundles/" + folderName + ".ffasset", BuildAssetBundleOptions.CollectDependencies | BuildAssetBundleOptions.ForceRebuildAssetBundle, BuildTarget.StandaloneWindows64);
     }
 
     [MenuItem("Assets/Build Asset Bundle", true)]
