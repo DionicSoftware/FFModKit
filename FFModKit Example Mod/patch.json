@@ -1,0 +1,18 @@
+{
+	"replaceOperations": {
+		"furniture/crystal/constructable": true,
+		"furniture/crystal/modules/resource/resourcesPerRound": 20,
+		"construction/floors/woodFloor/costResources": ["wood", "crystal"],
+		"construction/floors/woodFloor/costCounts": ["8", "1"],
+		"localization/health/english": "Sheer Power of Will",
+	},
+	"removeOperations": [
+		"furniture/crystal/needsUpdate",
+		"furniture/crystal/modules/resource/workSeconds"
+
+		// You can even remove objects from the base game.
+		// Might cause error messages on the console, depending on the object and its usage in the game.
+		//"furniture/crystal",
+		//"furniture/appleBasket",
+	],
+}

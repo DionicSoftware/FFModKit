@@ -1,0 +1,35 @@
+{
+	"laserSwordWorkbench": {
+		"costResources": ["wood"],
+		"costCounts": [5],
+		"requiredTech": [],
+		"buildPanelSection": "work",
+		"wealth": 4,
+		"beauty": 0,
+		"onlyInRoom": false,
+		"needsUpdate": false,
+		"collider": {
+			"boxes": [{"center": [0.0, 0.9, 0.0], "size": [1.8, 1.2, 0.7],}],
+			"doesCharacterCollide": true
+		},
+		"interactionOffset": [0, 0, 0.3],
+		"interactionTransforms": [{"pos":[0.0,0.0,0.75],"rot":180.0}],
+		"buildHeight": 0.2,
+		"dimensionsX": 2,
+		"dimensionsZ": 1,
+		"wishDescription": { "generateWish": "true", "locationName": "colony", "wishProbability": 1 },
+		"modules": {
+			"production": {
+				"productionDescriptions": [],
+				"interactionNameKey": "makeTools",
+				"professionSpecialization": "CraftsmanCarpenting"
+			},
+			"changeProfession": {
+				"profession": "craftsman"
+			},
+			"destroyable": {
+				"maxHealth": 10.0
+			}
+		}
+	},
+}

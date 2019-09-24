@@ -1,0 +1,10 @@
+{
+	"name": "FFModKit Example Mod",
+	"version": "1.0",
+	"author": "Oachkatzlschwoaf Interactive",
+	"website": "https://foundersfortune.com",
+	"description": "Example Mod by Oachkatzlschwoaf Interactive. Made for players that would like to learn how to mod Founders' Fortune!",
+	"compatibleVersions": [
+		"Alpha 10.0"
+	],
+}
