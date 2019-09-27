@@ -1,3 +1,5 @@
+![Modding](https://forum.foundersfortune.com/uploads/default/original/1X/e34496d98c2801f79a8f93f21eaaaf11c7a3cc82.jpeg)
+
 # FFModKit
 This Mod Kit is a collection of tools to make modding Founders' Fortune easier.
 
