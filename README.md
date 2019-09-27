@@ -33,10 +33,15 @@ ExampleScriptMod is a basic mod that uses C# to change the game's behaviour.
 1. Download and install Visual Studio Community 2019
 2. Open the project by double clicking on `ExampleScriptMod.sln` in the ExampleScriptMod folder
 3. Next, we should set up library references. I included some .dll files, but they might be out of date when you download the FFModKit. You can get the latest dll files directly from the game:
+
 3.1 Go to your game install directory. Usually it's somewhere under `C:\Program Files (x86)\Steam\steamapps\common\Founders' Fortune`
+
 3.2  Go to `Founders Fortune_Data\Managed`. These are all the dlls you might need.
+
 3.3 Move the dll files you need over to the lib folder in `ExampleScriptMod`. For the example mod it's enough to just replace the ones that are already in lib.
+
 3.4 In visual studio, make sure all references are pointing to the correct dlls. You can manage them in the solution explorer under `ExampleScriptMod -> Dependencies -> Assemblies`
+
 4. Have a look at the code and try to understand what it's doing. Also check the script mod tutorial.
 5. In the menu, click on `Build -> Build Solution`
 6. A new dll file has been compiled and moved into `ExampleScriptMod\ExampleScript\bin\Debug\netstandard2.0\ExampleScriptMod.dll`.
