@@ -1,0 +1,738 @@
+{
+"actionEquipment": {
+
+// Swords
+//*******
+	"swordWood": {
+		"requiredTech": ["weaponry"],
+		"requiredSkillName": "FightingWoodenSwords",
+		"damage": 4,
+		"ranged": false,
+		"rightHand": false,
+		"isAnimated": false,
+		"storageShape": "onehanded",
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 75,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "workbench",
+				"inputResources": ["wood"],
+				"inputCounts": [40],
+				"productionTime": 150
+			},
+		],
+	},
+	"swordStone": {
+		"requiredTech": ["stoneWeapons"],
+		"requiredSkillName": "FightingStoneSwords",
+		"damage": 8,
+		"ranged": false,
+		"rightHand": false,
+		"isAnimated": false,
+		"storageShape": "onehanded",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 200,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "masonsWorkbench",
+				"inputResources": ["stone", "wood"],
+				"inputCounts": [100, 10],
+				"productionTime": 250
+			},
+		],
+	},
+//	"cutlassSailor": {
+//		"requiredSkillName": "FightingMetalSwords",
+//		"damage": 7,
+//		"ranged": false,
+//		"hitSound": "metallicHit",
+//		"rightHand": false,
+//		"isAnimated": false,
+//		"storageShape": "onehanded",
+//		"defaultPrice": 150,
+//	},
+//	"cutlassCaptain": {
+//		"requiredSkillName": "FightingMetalSwords",
+//		"damage": 11,
+//		"ranged": false,
+//		"hitSound": "metallicHit",
+//		"rightHand": false,
+//		"isAnimated": false,
+//		"storageShape": "onehanded",
+//		"defaultPrice": 350,
+//	},
+
+	"swordIronTraderGuard": {
+		"requiredSkillName": "FightingMetalSwords",
+		"damage": 12,
+		"ranged": false,
+		"hitSound": "metallicHit",
+		"rightHand": false,
+		"isAnimated": false,
+		"storageShape": "onehanded",
+		"defaultPrice": 400,
+	},
+	"swordIron": {
+		"requiredTech": ["weaponForging"],
+		"requiredSkillName": "FightingMetalSwords",
+		"damage": 14,
+		"ranged": false,
+		"hitSound": "metallicHit",
+		"rightHand": false,
+		"isAnimated": false,
+		"storageShape": "onehanded",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 500,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "forge",
+				"inputResources": ["ironOre", "wood"],
+				"inputCounts": [45, 10],
+				"productionTime": 360
+			},
+		],
+	},
+
+
+// Clubs
+//******
+	"clubWood": {
+		"collider": {
+			"center": [0, 0.5, 0],
+			"size": [0.3, 0.8, 0.3]
+		},
+		"damage": 3,
+		"storageShape": "onehanded",
+		"buyProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 80,
+	},
+	"clubStone": {
+		"collider": {
+			"center": [0, 0.5, 0],
+			"size": [0.3, 0.8, 0.3]
+		},
+		"damage": 7,
+		"storageShape": "onehanded",
+		"buyProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 120,
+	},
+	"clubRitual": {
+		"collider": {
+			"center": [0, 0.5, 0],
+			"size": [0.3, 0.8, 0.3]
+		},
+		"damage": 10,
+		"storageShape": "onehanded",
+		"buyProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 160,
+	},
+
+
+// Axes
+//*****
+
+	"axeWood": {
+		"requiredTech": ["woodworking"],
+		"equipmentEffectName": "TreeYieldHigh",
+		"equipmentEffectFactor": 1.5,
+		"damage": 2,
+		"hitSound": "metallicHit",
+		"storageShape": "axe",
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 50,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "workbench",
+				"inputResources": ["wood"],
+				"inputCounts": [25],
+				"productionTime": 120
+			},
+		],
+	},
+	"axeStone": {
+		"requiredTech": ["masonry"],
+		"equipmentEffectName": "TreeYieldHigh",
+		"equipmentEffectFactor": 2,
+		"requiredSkillName": "WoodcuttingStoneTools",
+		"damage": 3,
+		"hitSound": "metallicHit",
+		"storageShape": "axe",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 125,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "masonsWorkbench",
+				"inputResources": ["stone", "wood"],
+				"inputCounts": [60, 10],
+				"productionTime": 200
+			},
+		],
+	},
+	"axeIron": {
+		"requiredTech": ["forging"],
+		"equipmentEffectName": "TreeYieldHigh",
+		"equipmentEffectFactor": 2.5,
+		"requiredSkillName": "WoodcuttingMetalTools",
+		"damage": 4,
+		"hitSound": "metallicHit",
+		"storageShape": "axe",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 300,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "forge",
+				"inputResources": ["ironOre", "wood"],
+				"inputCounts": [30, 20],
+				"productionTime": 300
+			},
+		],
+	},
+
+// Pickaxes
+//*********
+	"pickaxeWood": {
+		"requiredTech": ["woodworking"],
+		"equipmentEffectName": "MiningYieldHigh",
+		"equipmentEffectFactor": 1.5,
+		"damage": 2,
+		"hitSound": "metallicHit",
+		"storageShape": "pickaxe",
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 70,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "workbench",
+				"inputResources": ["wood"],
+				"inputCounts": [40],
+				"productionTime": 120
+			},
+		],
+	},
+	"pickaxeStone": {
+		"requiredTech": ["masonry"],
+		"equipmentEffectName": "MiningYieldHigh",
+		"equipmentEffectFactor": 2,
+		"requiredSkillName": "MiningStoneTools",
+		"damage": 3,
+		"hitSound": "metallicHit",
+		"storageShape": "pickaxe",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 150,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "masonsWorkbench",
+				"inputResources": ["stone", "wood"],
+				"inputCounts": [80, 10],
+				"productionTime": 200
+			},
+		],
+	},
+	"pickaxeIron": {
+		"requiredTech": ["forging"],
+		"collider": {
+			"center": [0, 0.4, 0],
+			"size": [0.7, 0.6, 0.7]
+		},
+		"equipmentEffectName": "MiningYieldHigh",
+		"equipmentEffectFactor": 2.5,
+		"requiredSkillName": "MiningMetalTools",
+		"damage": 4,
+		"hitSound": "metallicHit",
+		"storageShape": "pickaxe",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 320,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "forge",
+				"inputResources": ["ironOre", "wood"],
+				"inputCounts": [35, 10],
+				"productionTime": 300
+			},
+		],
+	},
+
+// Watering Cans
+//**************
+
+	"wateringCanWood": {
+		"requiredTech": ["watering"],
+		"collider": {
+			"center": [-0.163, -0.002, 0.241],
+			"size": [0.721, 0.343, 0.465]
+		},
+		"equipmentEffectName": "WateringPlants",
+		"storageShape": "wateringCan",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 80,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "workbench",
+				"inputResources": ["wood"],
+				"inputCounts": [50],
+				"productionTime": 150
+			},
+		],
+	},
+	"wateringCanStone": {
+		//"requiredTech": ["watering"],
+		"collider": {
+			"center": [-0.163, -0.002, 0.241],
+			"size": [0.721, 0.343, 0.465]
+		},
+		"equipmentEffectName": "WateringPlants",
+		"storageShape": "wateringCan",
+		//"buyProbability": 1,
+		//"sellProbability": 1,
+		//"typicalTradeAmount": 5,
+		//"defaultPrice": 200,
+		//"productionDescriptions": [
+		//	{
+		//		"productionFurniture": "masonsWorkbench",
+		//		"inputResources": ["stone"],
+		//		"inputCounts": [110],
+		//		"productionTime": 260
+		//	},
+		//],
+	},
+	"wateringCanIron": {
+		//"requiredTech": ["watering"],
+		"collider": {
+			"center": [-0.163, -0.002, 0.241],
+			"size": [0.721, 0.343, 0.465]
+		},
+		"equipmentEffectName": "WateringPlants",
+		"storageShape": "wateringCan",
+		//"buyProbability": 1,
+		//"sellProbability": 0,
+		//"typicalTradeAmount": 5,
+		//"defaultPrice": 400,
+		//"productionDescriptions": [
+		//	{
+		//		"productionFurniture": "forge",
+		//		"inputResources": ["iorn"],
+		//		"inputCounts": [40],
+		//		"productionTime": 320
+		//	},
+		//],
+	},
+
+// Bows
+//*****
+	"bow": {
+		"requiredTech": ["rangedWeapons"],
+		"collider": {
+			"center": [0, 0.2, 0],
+			"size": [0.7, 0.3, 0.7]
+		},
+		"requiredSkillName": "FightingBow",
+		"damage": 7,
+		"ranged": true,
+		"hitSound": "metallicHit",
+		"rightHand": true,
+		"isAnimated": true,
+		"storageShape": "bow",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 250,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "bowmaker",
+				"inputResources": ["wood", "cotton"],
+				"inputCounts": [70, 15],
+				"productionTime": 180
+			}
+		],
+	},
+},
+
+
+"clothingEquipment": {
+
+// Armors
+//*******
+
+	"armorIron": {
+		"requiredTech": ["armorForging"],
+		"equipmentEffectName": "",
+		"requiredSkillName": "HeavyArmor",
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 1,
+		"defaultPrice": 700,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "forge",
+				"inputResources": ["ironOre", "cotton"],
+				"inputCounts": [60, 20],
+				"productionTime": 400
+			}
+		],
+
+		"protection": 20,
+		"objectHideModeName": "Body",
+	},
+	"armorTraderGuard": {
+		"storageShape": "clothing",
+		"requiredSkillName": "HeavyArmor",
+		"protection": 18,
+		"objectHideModeName": "BodyAndHat",
+	},
+	"armorTikiHeavy": {
+		"storageShape": "clothing",
+		"hasSkin": true,
+		"buyProbability": 1,
+		"typicalTradeAmount": 3,
+		"defaultPrice": 400,
+		"protection": 17,
+		"objectHideModeName": "Body",
+	},
+//	"pirateCaptainGear0": {
+//		"storageShape": "clothing",
+//		"buyProbability": 1,
+//		"defaultPrice": 450,
+//		"protection": 16,
+//		"objectHideModeName": "BodyAndHat",
+//	},
+	"armorSimplePlate": {
+		"requiredTech": ["advancedTailoring"],
+		"requiredSkillName": "MediumArmor",
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 2,
+		"defaultPrice": 450,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton", "ironOre"],
+				"inputCounts": [40, 20],
+				"productionTime": 300
+			}
+		],
+
+		"protection": 15,
+		"objectHideModeName": "Body",
+	},
+//	"pirateSailorGear0": {
+//		"storageShape": "clothing",
+//		"buyProbability": 1,
+//		"defaultPrice": 250,
+//		"protection": 10,
+//		"objectHideModeName": "BodyAndHat",
+//	},
+	"armorTikiMedium": {
+		"storageShape": "clothing",
+		"hasSkin": true,
+		"buyProbability": 1,
+		"defaultPrice": 200,
+		"protection": 13,
+		"objectHideModeName": "Body",
+	},
+	"armorGambeson": {
+		"requiredTech": ["tailoring"],
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 3,
+		"defaultPrice": 250,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton"],
+				"inputCounts": [40],
+				"productionTime": 200
+			}
+		],
+
+		"protection": 10,
+		"objectHideModeName": "Body",
+	},
+
+// Working Gears
+//**************
+	"doctorRobe0": {
+		"requiredTech": ["tailoring"],
+		"equipmentEffectName": "",
+		"requiredSkillName": "",
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 1,
+		"defaultPrice": 250,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton"],
+				"inputCounts": [40],
+				"productionTime": 200
+			}
+		],
+
+		"protection": 7,
+		"objectHideModeName": "Body",
+	},
+	"doctorRobe1": {
+		"requiredTech": ["advancedTailoring"],
+		"equipmentEffectName": "",
+		"requiredSkillName": "DoctorMasterOutfit",
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 1,
+		"defaultPrice": 450,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton", "ironOre"],
+				"inputCounts": [40, 20],
+				"productionTime": 300
+			}
+		],
+
+		"protection": 13,
+		"objectHideModeName": "BodyAndHead",
+	},
+	"farmerGear0": {
+		"requiredTech": ["tailoring"],
+		"equipmentEffectName": "FasterSowingAndWatering",
+		"equipmentEffectFactor": 0.8,
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 2,
+		"defaultPrice": 200,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton"],
+				"inputCounts": [30],
+				"productionTime": 180
+			}
+		],
+
+		"protection": 6,
+		"objectHideModeName": "Body"
+	},
+	"farmerGear1": {
+		"requiredTech": ["advancedTailoring"],
+		"equipmentEffectName": "FasterSowingAndWatering",
+		"equipmentEffectFactor": 0.6,
+		"requiredSkillName": "FarmerMasterOutfit",
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 1,
+		"defaultPrice": 350,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton"],
+				"inputCounts": [60],
+				"productionTime": 250
+			}
+		],
+
+		"protection": 10,
+		"objectHideModeName": "BodyAndHat",
+	},
+	"foresterGear0": {
+		"requiredTech": ["tailoring"],
+		"equipmentEffectName": "FasterForesting",
+		"equipmentEffectFactor": 0.8,
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 1,
+		"defaultPrice": 200,
+		"protection": 6,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton"],
+				"inputCounts": [30],
+				"productionTime": 180
+			}
+		],
+		"objectHideModeName": "Body"
+	},
+	"foresterGear1": {
+		"requiredTech": ["advancedTailoring"],
+		"equipmentEffectName": "FasterForesting",
+		"equipmentEffectFactor": 0.6,
+		"requiredSkillName": "ForesterMasterOutfit",
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 1,
+		"defaultPrice": 350,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton"],
+				"inputCounts": [60],
+				"productionTime": 250
+			}
+		],
+
+		"protection": 10,
+		"objectHideModeName": "BodyAndHat",
+	},
+	"minerGear0": {
+		"requiredTech": ["tailoring"],
+		"equipmentEffectName": "FasterMining",
+		"equipmentEffectFactor": 0.8,
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 1,
+		"defaultPrice": 200,
+		"protection": 6,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton"],
+				"inputCounts": [30],
+				"productionTime": 180
+			}
+		],
+		"objectHideModeName": "Body"
+	},
+	"minerGear1": {
+		"requiredTech": ["advancedTailoring"],
+		"equipmentEffectName": "FasterMining",
+		"equipmentEffectFactor": 0.6,
+		"requiredSkillName": "MinerMasterOutfit",
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 1,
+		"defaultPrice": 350,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton", "ironOre"],
+				"inputCounts": [40, 20],
+				"productionTime": 300
+			}
+		],
+
+		"protection": 13,
+		"objectHideModeName": "BodyAndHat",
+	},
+	"craftsmanGear0": {
+		"requiredTech": ["tailoring"],
+		"equipmentEffectName": "FasterCrafting",
+		"equipmentEffectFactor": 0.8,
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 1,
+		"defaultPrice": 200,
+		"protection": 6,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton"],
+				"inputCounts": [30],
+				"productionTime": 180
+			}
+		],
+		"objectHideModeName": "Body"
+	},
+	"craftsmanGear1": {
+		"requiredTech": ["advancedTailoring"],
+		"equipmentEffectName": "FasterCrafting",
+		"equipmentEffectFactor": 0.6,
+		"requiredSkillName": "CraftsmanMasterOutfit",
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 1,
+		"defaultPrice": 400,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton", "coins"],
+				"inputCounts": [60, 40],
+				"productionTime": 300
+			}
+		],
+
+		"protection": 8,
+		"objectHideModeName": "BodyAndHat",
+	},
+	"scholarRobe0": {
+		"requiredTech": ["tailoring"],
+		"equipmentEffectName": "FasterResearching",
+		"equipmentEffectFactor": 0.8,
+		"requiredSkillName": "ScholarBaseOutfit",
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 1,
+		"defaultPrice": 250,
+		"protection": 5,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton"],
+				"inputCounts": [40],
+				"productionTime": 180
+			}
+		],
+		"objectHideModeName": "Body"
+	},
+	"scholarRobe1": {
+		"requiredTech": ["advancedTailoring"],
+		"equipmentEffectName": "FasterResearching",
+		"equipmentEffectFactor": 0.6,
+		"requiredSkillName": "ScholarMasterOutfit",
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 1,
+		"defaultPrice": 400,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton", "coins"],
+				"inputCounts": [60, 40],
+				"productionTime": 300
+			}
+		],
+
+		"protection": 6,
+		"objectHideModeName": "BodyAndHat",
+	},
+	"traderGear": {
+		"requiredSkillName": "",
+		"storageShape": "clothing",
+		"defaultPrice": 400,
+		"protection": 9,
+		"objectHideModeName": "BodyAndHat"
+	},
+
+}
+}

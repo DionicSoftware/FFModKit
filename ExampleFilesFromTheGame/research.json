@@ -1,0 +1,212 @@
+{
+		
+// Tier I
+//*******
+
+	"woodworking": {
+		"crystalCost": 5,
+		"predecessors": [],
+		"locationX": 0,
+		"locationY": 1
+	},
+	"farming": {
+		"crystalCost": 5,
+		"predecessors": [],
+		"locationX": 0,
+		"locationY": 3.5
+	},
+
+// Tier II
+// *******
+
+	"weaponry": {
+		"crystalCost": 15,
+		"predecessors": ["woodworking"],
+		"locationX": 1,
+		"locationY": 0.5
+	},
+	"furnitureI": {
+		"crystalCost": 10,
+		"predecessors": ["woodworking"],
+		"locationX": 1,
+		"locationY": 1.5
+	},
+	"tailoring": {
+		"crystalCost": 10,
+		"predecessors": ["farming"],
+		"locationX": 1,
+		"locationY": 3
+	},
+	"gardening": {
+		"crystalCost": 10,
+		"predecessors": ["farming"],
+		"locationX": 1,
+		"locationY": 4
+	},
+
+// Tier III
+//*********
+
+	"architectureI": {
+		"crystalCost": 15,
+		"predecessors": ["weaponry"],
+		"locationX": 2,
+		"locationY": 0.5
+	},
+	"masonry": {
+		"crystalCost": 20,
+		"predecessors": ["furnitureI"],
+		"locationX": 2,
+		"locationY": 1.5
+	},
+	"decoration": {
+		"crystalCost": 15,
+		"predecessors": ["tailoring"],
+		"locationX": 2,
+		"locationY": 2.5
+	},
+	"watering": {
+		"crystalCost": 25,
+		"predecessors": ["tailoring", "gardening"],
+		"locationX": 2,
+		"locationY": 3.5
+	},
+	"writing": {
+		"crystalCost": 20,
+		"predecessors": [],
+		"locationX": 2,
+		"locationY": 4.5
+	},
+
+
+// Tier IV
+//*********
+
+	"architectureII": {
+		"crystalCost": 20,
+		"predecessors": ["architectureI", "masonry"],
+		"locationX": 3,
+		"locationY": 0.5
+	},
+	"stoneWeapons": {
+		"crystalCost": 25,
+		"scrollCost": 1,
+		"predecessors": ["masonry"],
+		"locationX": 3,
+		"locationY": 1.5
+	},
+	"furnitureII": {
+		"crystalCost": 20,
+		"predecessors": ["masonry", "decoration"],
+		"locationX": 3,
+		"locationY": 2.5
+	},
+	"brewery": {
+		"crystalCost": 20,
+		"predecessors": ["watering"],
+		"locationX": 3,
+		"locationY": 3.5
+	},
+
+// Tier V
+//*******
+
+	"rangedWeapons": {
+		"crystalCost": 30,
+		"scrollCost": 3,
+		"predecessors": ["architectureII"],
+		"locationX": 4,
+		"locationY": 0.5
+	},
+	"furnitureIII": {
+		"crystalCost": 30,
+		"predecessors": ["architectureII", "furnitureII"],
+		"locationX": 4,
+		"locationY": 1.5
+	},
+	"stoneFurniture": {
+		"crystalCost": 25,
+		"predecessors": ["furnitureII"],
+		"locationX": 4,
+		"locationY": 3
+	},
+	"medicine": {
+		"crystalCost": 30,
+		"scrollCost": 2,
+		"predecessors": ["writing"],
+		"locationX": 4,
+		"locationY": 4.5
+	},
+
+// Tier VI
+//********
+
+	"towers": {
+		"crystalCost": 50,
+		"scrollCost": 10,
+		"predecessors": ["rangedWeapons"],
+		"locationX": 5,
+		"locationY": 0.5
+	},
+	"forging": {
+		"crystalCost": 80,
+		"scrollCost": 15,
+		"predecessors": ["furnitureIII"],
+		"locationX": 5,
+		"locationY": 1.5
+	},
+	"advancedTailoring": {
+		"crystalCost": 30,
+		"scrollCost": 3,
+		"predecessors": ["furnitureII"],
+		"locationX": 5,
+		"locationY": 2.5
+	},
+	"advancedCooking": {
+		"crystalCost": 30,
+		"predecessors": ["brewery", "stoneFurniture"],
+		"locationX": 5,
+		"locationY": 3.5
+	},
+	"alchemy": {
+		"crystalCost": 50,
+		"scrollCost": 10,
+		"predecessors": ["medicine"],
+		"locationX": 5,
+		"locationY": 4.5
+	},
+
+
+// Tier VII
+//*********
+
+
+	"strongWatchtowers": {
+		"crystalCost": 100,
+		"scrollCost": 20,
+		"predecessors": ["towers"],
+		"locationX": 6,
+		"locationY": 0.5
+	},
+	"weaponForging": {
+		"crystalCost": 40,
+		"scrollCost": 15,
+		"predecessors": ["forging"],
+		"locationX": 6,
+		"locationY": 1.5
+	},
+	"armorForging": {
+		"crystalCost": 50,
+		"scrollCost": 20,
+		"predecessors": ["advancedTailoring", "forging"],
+		"locationX": 6,
+		"locationY": 2.5
+	},
+	"grainProcessing": {
+		"crystalCost": 70,
+		"scrollCost": 10,
+		"predecessors": ["advancedCooking", "alchemy"],
+		"locationX": 6,
+		"locationY": 4
+	},
+}
