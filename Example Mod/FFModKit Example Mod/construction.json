@@ -1,0 +1,51 @@
+{
+"floors": {
+
+	"imaginationCarpet": {
+		"requiredTech": [],
+		"costResources": ["cotton"],
+		"costCounts": [2],
+		"buildPanelSection": "floors",
+	},
+
+},
+
+
+"walls": {
+	
+	"redStoneWall": {
+		"requiredTech": [],
+		"costResources": ["stone"],
+		"costCounts": [12],
+		"buildPanelSection": "walls",
+		"usesNumberRepetition": true,
+		"health": 15,
+	},
+
+	"stoneFence": {
+		"requiredTech": [],
+		"costResources": ["stone"],
+		"costCounts": [5],
+		"buildPanelSection": "walls",
+		"usesNumberRepetition": true,
+		"isFence": true,
+		"fencePostPriority": 40,
+		"fencePostName": "stoneFencePost",
+		"fencePostMultipleModelCount": 2,
+		"health": 8,
+	},
+
+	"blackCastleWall": {
+		"costResources": ["stone"],
+		"costCounts": [10],
+		"buildPanelSection": "fortifications",
+		"requiredTech": ["masonry"],
+		"isFortification": true,
+		"wallHeightOverride": 2.4,
+		"wallThicknessOverride" : 0.57,
+		"fortificationStraightVariationCount": 5,
+		"health": 70,
+	},
+
+}
+}

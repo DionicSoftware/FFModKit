@@ -1,0 +1,55 @@
+{
+"actionEquipment": {
+
+// Swords
+//*******
+	"laserSword": {
+		"requiredTech": [],
+		"requiredSkillName": "",
+		"damage": 40,
+		"ranged": false,
+		"rightHand": false,
+		"isAnimated": false,
+		"storageShape": "onehanded",
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 75,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "laserSwordWorkbench",
+				"inputResources": ["wood"],
+				"inputCounts": [5],
+				"productionTime": 20
+			},
+		],
+	},
+},
+
+
+"clothingEquipment": {
+
+// Armors
+//*******
+
+	"armorStarmaster": {
+		"requiredTech": ["tailoring"],
+		"storageShape": "clothing",
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 3,
+		"defaultPrice": 550,
+		"productionDescriptions": [
+			{
+				"productionFurniture": "tailor",
+				"inputResources": ["cotton"],
+				"inputCounts": [5],
+				"productionTime": 20
+			}
+		],
+
+		"protection": 30,
+		"objectHideModeName": "Body",
+	},
+
+}
+}
