@@ -3,7 +3,7 @@ bin/
 obj/
 .vs/
 
-!/ExampleScriptMod/lib/*.dll
+!/Example Mod/**/*.dll
 
 # Standard Unity stuff:
 
