@@ -20,7 +20,11 @@
 			},
 			"destroyable": {
 				"maxHealth": 10.0
-			}
+			},
+			"stockpile": {
+				"resourceName": "FoodRaw",
+				"capacity": 10
+			},
 		}
 	},
 	"foodShelfCampfire": {
@@ -32,7 +36,7 @@
 		"costCounts": [30],
 		"requiredTech": ["farming"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, -0.5],
@@ -47,7 +51,11 @@
 			},
 			"destroyable": {
 				"maxHealth": 20.0
-			}
+			},
+			"stockpile": {
+				"resourceName": "FoodCooked",
+				"capacity": 20
+			},
 		}
 	},
 	"foodShelfKitchen": {
@@ -59,7 +67,7 @@
 		"costCounts": [40, 10],
 		"requiredTech": ["advancedCooking"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, -0.5],
@@ -74,7 +82,11 @@
 			},
 			"destroyable": {
 				"maxHealth": 20.0
-			}
+			},
+			"stockpile": {
+				"resourceName": "FoodCooked",
+				"capacity": 20
+			},
 		}
 	},
 	"foodShelfBakery": {
@@ -86,7 +98,7 @@
 		"costCounts": [50, 10],
 		"requiredTech": ["grainProcessing"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, -0.5],
@@ -101,7 +113,11 @@
 			},
 			"destroyable": {
 				"maxHealth": 20.0
-			}
+			},
+			"stockpile": {
+				"resourceName": "FoodCooked",
+				"capacity": 20
+			},
 		}
 	},
 	"beerRefillBarrel": {
@@ -127,7 +143,11 @@
 			},
 			"destroyable": {
 				"maxHealth": 20.0
-			}
+			},
+			"stockpile": {
+				"resourceName": "Beer",
+				"capacity": 10
+			},
 		}
 	},
 	
@@ -400,7 +420,7 @@
 		"costCounts": [35],
 		"requiredTech": ["furnitureI"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0],
@@ -422,7 +442,7 @@
 		"costCounts": [35],
 		"requiredTech": ["furnitureI"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0],
@@ -444,7 +464,7 @@
 		"costCounts": [40],
 		"requiredTech": ["furnitureII"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0],
@@ -466,7 +486,7 @@
 		"costCounts": [40],
 		"requiredTech": ["furnitureII"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0],
@@ -488,7 +508,7 @@
 		"costCounts": [40],
 		"requiredTech": ["stoneFurniture"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0],
@@ -510,7 +530,7 @@
 		"costCounts": [40],
 		"requiredTech": ["stoneFurniture"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0],
@@ -532,7 +552,7 @@
 		"costCounts": [45],
 		"requiredTech": ["furnitureIII"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0],
@@ -554,7 +574,7 @@
 		"costCounts": [45],
 		"requiredTech": ["furnitureIII"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0],
@@ -579,7 +599,7 @@
 		"costCounts": [35],
 		"requiredTech": ["furnitureI"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0],
@@ -601,7 +621,7 @@
 		"costCounts": [40],
 		"requiredTech": ["furnitureII"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0],
@@ -623,7 +643,7 @@
 		"costCounts": [40],
 		"requiredTech": ["stoneFurniture"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0],
@@ -645,7 +665,7 @@
 		"costCounts": [45],
 		"requiredTech": ["furnitureIII"],
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0],
@@ -800,6 +820,7 @@
 			"boxes": [{"center":[0,0.06,0],"size":[2.38,0.01,1.34]}],
 			"doesCharacterCollide": false
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -820,6 +841,7 @@
 			"boxes": [{"center":[0,0.06,0],"size":[2.38,0.01,1.34]}],
 			"doesCharacterCollide": false
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -840,6 +862,7 @@
 			"boxes": [{"center":[0,0.06,0],"size":[2.38,0.01,1.34]}],
 			"doesCharacterCollide": false
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -860,6 +883,7 @@
 			"boxes": [{"center":[0,0.06,0],"size":[2.38,0.01,1.34]}],
 			"doesCharacterCollide": false
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -880,6 +904,7 @@
 			"boxes": [{"center":[0,0.06,0],"size":[2.38,0.01,1.34]}],
 			"doesCharacterCollide": false
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -900,6 +925,7 @@
 			"boxes": [{"center":[0,0.06,0],"size":[2.38,0.01,1.34]}],
 			"doesCharacterCollide": false
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -920,6 +946,7 @@
 			"boxes": [{"center":[0,0.06,0],"size":[2.38,0.01,2.38]}],
 			"doesCharacterCollide": false
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -940,6 +967,7 @@
 			"boxes": [{"center":[0,0.06,0],"size":[2.38,0.01,2.38]}],
 			"doesCharacterCollide": false
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -960,6 +988,7 @@
 			"boxes": [{"center":[0,0.06,0],"size":[2.38,0.01,2.38]}],
 			"doesCharacterCollide": false
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -980,6 +1009,7 @@
 			"boxes": [{"center":[0,0.06,0],"size":[2.38,0.01,2.38]}],
 			"doesCharacterCollide": false
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -1000,6 +1030,7 @@
 			"boxes": [{"center":[0,0.06,0],"size":[2.38,0.01,2.38]}],
 			"doesCharacterCollide": false
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -1146,6 +1177,7 @@
 			"boxes": [{"center":[0,0.06,0],"size":[2.38,0.01,2.38]}],
 			"doesCharacterCollide": false
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -1165,8 +1197,8 @@
 		"collider": {
 			"boxes": [{"center":[0,0.06,0],"size":[4.37,0.01,2.38]}],
 			"doesCharacterCollide": false
-
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -1186,8 +1218,8 @@
 		"collider": {
 			"boxes": [{"center":[0,0.06,0],"size":[4.37,0.01,2.38]}],
 			"doesCharacterCollide": false
-
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -1207,8 +1239,8 @@
 		"collider": {
 			"boxes": [{"center":[0,0.06,0],"size":[4.37,0.01,2.38]}],
 			"doesCharacterCollide": false
-
 		},
+		"isWalkable": true,
 		"interactionOffset": [0, 0, 0],
 		"buildHeight": 0.5,
 		"wishDescription": { "generateWish": "true", "furnitureCategoryName": "rug", "locationName": "house", "wishProbability": 1 },
@@ -2339,7 +2371,7 @@
 			"destroyable": {
 				"maxHealth": 15.0
 			},
-			"tabl": {
+			"table": {
 			}
 		}
 	},
@@ -2365,7 +2397,7 @@
 			"destroyable": {
 				"maxHealth": 15.0
 			},
-			"tabl": {
+			"table": {
 			}
 		}
 	},
@@ -2390,7 +2422,7 @@
 			"destroyable": {
 				"maxHealth": 15.0
 			},
-			"tabl": {
+			"table": {
 			}
 		}
 	},
@@ -2415,7 +2447,7 @@
 			"destroyable": {
 				"maxHealth": 15.0
 			},
-			"tabl": {
+			"table": {
 			}
 		}
 	},
@@ -2441,7 +2473,7 @@
 			"destroyable": {
 				"maxHealth": 15.0
 			},
-			"tabl": {
+			"table": {
 			}
 		}
 	},
@@ -2466,7 +2498,7 @@
 			"destroyable": {
 				"maxHealth": 15.0
 			},
-			"tabl": {
+			"table": {
 			}
 		}
 	},
@@ -2492,7 +2524,7 @@
 			"destroyable": {
 				"maxHealth": 15.0
 			},
-			"tabl": {
+			"table": {
 			}
 		}
 	},
@@ -2518,7 +2550,7 @@
 			"destroyable": {
 				"maxHealth": 15.0
 			},
-			"tabl": {
+			"table": {
 			}
 		}
 	},
@@ -3927,7 +3959,7 @@
 		"costCounts": [70],
 		"requiredTech": ["medicine"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.2, 0.0], "size": [0.8, 1.9, 0.8],}],
+			"boxes": [{"center": [0.0, 1.2, 0.0], "size": [0.8, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0.5],
@@ -3955,7 +3987,7 @@
 			},
 			"destroyable": {
 				"maxHealth": 10.0
-			}
+			},
 		}
 	},
 	"potionLab": {
@@ -3967,7 +3999,7 @@
 		"costCounts": [90],
 		"requiredTech": ["alchemy"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.2, 0.0], "size": [2.8, 1.9, 0.8],}],
+			"boxes": [{"center": [0.0, 1.2, 0.0], "size": [2.8, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0.5, 0, 0.5],
@@ -4004,13 +4036,12 @@
 			}
 		}
 	},
-"potionMedicineStorage": {
+	"potionMedicineStorage": {
 		"onlyInRoom": true,
 		"wealth": 10,
 		"needsUpdate": false,
 		"costResources": ["wood"],
-		"costCounts": [30],
-		"requiredTech": ["woodworking"],
+		"costCounts": [35],
 		"collider": {
 			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.8, 1.8, 0.8],}],
 			"doesCharacterCollide": true
@@ -4026,9 +4057,17 @@
 			"destroyable": {
 				"maxHealth": 10.0
 			},
+			"stockpile1": {
+				"resourceName": "Medicine",
+				"capacity": 5
+			},
+			"stockpile2": {
+				"resourceName": "HealingPotion",
+				"capacity": 5
+			},
 		}
 	},
-"bookshelf": {
+	"bookshelf": {
 		"costResources": ["wood"],
 		"costCounts": [60],
 		"requiredTech": ["writing"],
@@ -4036,7 +4075,7 @@
 		"beauty": 8,
 		"onlyInRoom": true,
 		"collider": {
-			"boxes": [{"center": [0.0, 1.2, -0.1], "size": [1.7, 1.8, 0.6],}],
+			"boxes": [{"center": [0.0, 1.16, -0.1], "size": [1.7, 1.8, 0.6],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0.5],
@@ -4109,7 +4148,7 @@
 		"beauty": 3,
 		"onlyInRoom": true,
 		"collider": {
-			"boxes": [{"center": [-0.01, 1.16, 0.0], "size": [1.5, 1.9, 0.8],}],
+			"boxes": [{"center": [0.0, 1.16, 0.0], "size": [1.8, 1.8, 0.8],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0.5],
@@ -4288,7 +4327,7 @@
 		"costCounts": [120, 100, 75],
 		"requiredTech": ["grainProcessing"],
 		"collider": {
-			"boxes": [{"center": [0, 0.95, -0.15], "size": [3.75, 1.4, 1.5],}],
+			"boxes": [{"center": [0.0, 0.9, -0.42], "size": [3.75, 1.25, 0.95],}, {"center": [0, 1.16, 0.0], "size": [1.0, 1.8, 1.75],}],
 			"doesCharacterCollide": true
 		},
 		"interactionOffset": [0, 0, 0],
@@ -4590,7 +4629,7 @@
 		},
 		"inEarth": true,
 		"interactionOffset": [0, 0, 0],
-		"interactionTransforms": [{"pos":[0.0,0.0,-1.25],"rot":0.0}],
+		"interactionTransforms": [{"pos":[0.0,0.0,-1.25],"rot":0.0},{"pos":[0.883723736,0.0,0.9019079],"rot":224.999985},{"pos":[-0.8567014,0.0,0.8888893],"rot":135.0},{"pos":[0.0,0.0,1.25],"rot":180.0},{"pos":[0.892834246,0.0,-0.9284935],"rot":315.0},{"pos":[-0.907648444,0.0,-0.907583237],"rot":45.0000038}],
 		"buildHeight": 0.4,
 		"dimensionsX": 2,
 		"dimensionsZ": 2,
@@ -4745,7 +4784,7 @@
 		"requiredTech": ["towers"],
 		"wealth": 14,
 		"collider": {
-			"boxes": [{"center": [0.0, 0.9, 0.0], "size": [1.5, 1.6, 1.5],}],
+			"boxes": [{"center": [0.0, 1.5, 0.0], "size": [1.5, 2.8, 1.5],}],
 			"doesCharacterCollide": true
 		},
 			"seasonalDescription": {
@@ -4766,7 +4805,7 @@
 				"isControlTaskSpecific": false,
 				"interpolatePosition": false
 			},
-			"towe": {
+			"tower": {
 			},
 			"destroyable": {
 				"maxHealth": 30.0
@@ -4779,7 +4818,7 @@
 		"requiredTech": ["strongWatchtowers"],
 		"wealth": 20,
 		"collider": {
-			"boxes": [{"center": [0.0, 1.3, 0.0], "size": [1.5, 2.3, 1.5],}],
+			"boxes": [{"center": [0.0, 1.9, 0.0], "size": [1.5, 3.6, 1.5],}],
 			"doesCharacterCollide": true
 		},
 		"seasonalDescription": {
@@ -4800,13 +4839,299 @@
 				"isControlTaskSpecific": false,
 				"interpolatePosition": false
 			},
-			"towe": {
+			"tower": {
 			},
 			"destroyable": {
 				"maxHealth": 90.0
 			}
 		}
 	},
+
+// Stockpiles
+// **********
+
+	"stockpileWood": {
+		"costResources": ["wood"],
+		"costCounts": [15],
+		"wealth": 3,
+		"collider": {
+			"boxes": [{"center": [0.1, 1.0, 0.0], "size": [1.6, 1.8, 2.8],}],
+			"doesCharacterCollide": true
+		},
+		"seasonalDescription": {
+			"objectsToConfigure": ["snow", "snowLogs1", "snowLogs2", "snowLogs3"],
+			"springMaterials": ["", "", "", ""],
+			"summerMaterials": ["", "", "", ""],
+			"autumnMaterials": ["", "", "", ""],
+			"winterMaterials": ["snow", "", "", ""]
+		},
+		"buildHeight": 1,
+		"dimensionsX": 2,
+		"dimensionsZ": 3,
+		"modules": {
+			"stockpile": {
+				"resourceName": "Wood",
+				"capacity": 80,
+				"fillLevelObjectNames": ["logs1", "logs2", "logs3"],
+				"hideLowerObjects": false,
+			},
+			"destroyable": {
+				"maxHealth": 15.0
+			}
+		}
+	},
+	"stockpileStone": {
+		"costResources": ["wood", "cotton"],
+		"costCounts": [5, 2],
+		"wealth": 3,
+		"collider": {
+			"boxes": [{"center": [0.0, 0.5, 0.0], "size": [1.8, 0.8, 1.8],}],
+			"doesCharacterCollide": true
+		},
+		"seasonalDescription": {
+			"objectsToConfigure": ["Snow", "rocks1snow", "rocks2snow", "rocks3snow"],
+			"springMaterials": ["", "", "", ""],
+			"summerMaterials": ["", "", "", ""],
+			"autumnMaterials": ["", "", "", ""],
+			"winterMaterials": ["snow", "", "", ""]
+		},
+		"buildHeight": 0.4,
+		"dimensionsX": 2,
+		"dimensionsZ": 2,
+		"modules": {
+			"stockpile": {
+				"resourceName": "Stone",
+				"capacity": 40,
+				"fillLevelObjectNames": ["rocks1", "rocks2", "rocks3"],
+				"hideLowerObjects": false,
+			},
+			"destroyable": {
+				"maxHealth": 15.0
+			}
+		}
+	},
+	"stockpileCrystal": {
+		"costResources": ["wood"],
+		"costCounts": [15],
+		"wealth": 3,
+		"collider": {
+			"boxes": [{"center": [0.0, 0.5, 0.0], "size": [1.8, 0.8, 1.8],}],
+			"doesCharacterCollide": true
+		},
+		"seasonalDescription": {
+			"objectsToConfigure": ["crystal_01_Snow", "crystal_02_Snow", "crystal_03_Snow"],
+			"springMaterials": ["", "", ""],
+			"summerMaterials": ["", "", ""],
+			"autumnMaterials": ["", "", ""],
+			"winterMaterials": ["", "", ""]
+		},
+		"needsUpdate": true,
+		"buildHeight": 0.4,
+		"dimensionsX": 2,
+		"dimensionsZ": 2,
+		"modules": {
+			"stockpile": {
+				"resourceName": "Crystal",
+				"capacity": 10,
+				"fillLevelObjectNames": ["crystal_01", "crystal_02", "crystal_03"],
+			},
+			"destroyable": {
+				"maxHealth": 15.0
+			},
+			"light": {
+				"position": [0.0, 1.3, 0.0],
+				"range": 6,
+				"intensity": 1.8,
+				"colorHSV": [0.54, 1.0, 1.0],
+				"daytimeControlled": true
+			},
+			"effects": {
+				"modulesToControl": ["light"],
+				"turnOnDuringNight": true
+			},
+		}
+	},
+	"stockpileCotton": {
+		"costResources": ["wood"],
+		"costCounts": [25],
+		"wealth": 3,
+		"collider": {
+			"boxes": [{"center": [0.0, 0.85, 0.0], "size": [1.8, 1.5, 0.8],}],
+			"doesCharacterCollide": true
+		},
+		"buildHeight": 0.6,
+		"dimensionsX": 2,
+		"dimensionsZ": 1,
+		"modules": {
+			"stockpile": {
+				"resourceName": "Cotton",
+				"capacity": 20,
+				"fillLevelObjectNames": ["cotton_basket_01", "cotton_basket_02", "cotton_basket_03"],
+			},
+			"destroyable": {
+				"maxHealth": 10.0
+			}
+		}
+	},
+	"stockpileCoinSmall": {
+		"costResources": ["ironOre", "wood"],
+		"costCounts": [10, 10],
+		"wealth": 3,
+		"collider": {
+			"boxes": [{"center": [0.0, 0.7, 0.0], "size": [0.8, 1.1, 0.8],}],
+			"doesCharacterCollide": true
+		},
+		"buildHeight": 0.6,
+		"dimensionsX": 1,
+		"dimensionsZ": 1,
+		"modules": {
+			"stockpile": {
+				"resourceName": "Coins",
+				"capacity": 100,
+			},
+			"destroyable": {
+				"maxHealth": 20.0
+			}
+		}
+	},
+	"stockpileCoinBig": {
+		"costResources": ["ironOre", "wood"],
+		"costCounts": [30, 5],
+		"wealth": 3,
+		"collider": {
+			"boxes": [{"center": [0.0, 0.9, 0.0], "size": [1.5, 1.5, 1.5],}],
+			"doesCharacterCollide": true
+		},
+		"buildHeight": 0.8,
+		"dimensionsX": 2,
+		"dimensionsZ": 2,
+		"modules": {
+			"stockpile": {
+				"resourceName": "Coins",
+				"capacity": 500
+			},
+			"destroyable": {
+				"maxHealth": 30.0
+			}
+		}
+	},
+	"stockpileHealingPlant": {
+		"costResources": ["wood", "cotton"],
+		"costCounts": [20, 5],
+		"wealth": 3,
+		"collider": {
+			"boxes": [{"center": [0.0, 0.85, 0.0], "size": [0.8, 1.5, 0.8],}],
+			"doesCharacterCollide": true
+		},
+		"buildHeight": 0.7,
+		"dimensionsX": 1,
+		"dimensionsZ": 1,
+		"modules": {
+			"stockpile": {
+				"resourceName": "HealingPlant",
+				"capacity": 10,
+				"fillLevelObjectNames": ["Plants_01", "Plants_02", "Plants_03"],
+			},
+			"destroyable": {
+				"maxHealth": 10.0
+			}
+		}
+	},
+	"stockpileBeer": {
+		"costResources": ["wood"],
+		"costCounts": [40],
+		"wealth": 3,
+		"collider": {
+			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [2.8, 1.8, 0.8],}],
+			"doesCharacterCollide": true
+		},
+		"buildHeight": 1.0,
+		"dimensionsX": 3,
+		"dimensionsZ": 1,
+		"modules": {
+			"stockpile": {
+				"resourceName": "Beer",
+				"capacity": 30
+			},
+			"destroyable": {
+				"maxHealth": 15.0
+			}
+		}
+	},
+	"stockpileIronOre": {
+		"costResources": ["wood"],
+		"costCounts": [15],
+		"wealth": 3,
+		"collider": {
+			"boxes": [{"center": [0.0, 0.6, 0.0], "size": [0.80, 0.95, 0.80],}],
+			"doesCharacterCollide": true
+		},
+		"seasonalDescription": {
+			"objectsToConfigure": ["ironOre_01_Snow", "ironOre_02_Snow", "ironOre_03_Snow"],
+			"springMaterials": ["", "", ""],
+			"summerMaterials": ["", "", ""],
+			"autumnMaterials": ["", "", ""],
+			"winterMaterials": ["", "", ""]
+		},
+		"buildHeight": 0.5,
+		"dimensionsX": 1,
+		"dimensionsZ": 1,
+		"modules": {
+			"stockpile": {
+				"resourceName": "IronOre",
+				"capacity": 15,
+				"fillLevelObjectNames": ["ironOre_01", "ironOre_02", "ironOre_03"],
+			},
+			"destroyable": {
+				"maxHealth": 10.0
+			}
+		}
+	},
+	"stockpileRawFood": {
+		"costResources": ["wood"],
+		"costCounts": [25],
+		"wealth": 3,
+		"collider": {
+			"boxes": [{"center": [0.0, 1.0, -0.5], "size": [1.8, 1.85, 0.8]}, {"center": [0.5, 1.0, 0.0], "size": [0.8, 1.85, 1.8]}],
+			"doesCharacterCollide": true
+		},
+		"buildHeight": 0.9,
+		"dimensionsX": 2,
+		"dimensionsZ": 2,
+		"modules": {
+			"stockpile": {
+				"resourceName": "FoodRaw",
+				"capacity": 80,
+				"fillLevelObjectNames": ["food_01", "food_02", "food_03"],
+			},
+			"destroyable": {
+				"maxHealth": 10.0
+			}
+		}
+	},
+	"stockpileScroll": {
+		"costResources": ["wood", "ironOre"],
+		"costCounts": [100, 20],
+		"wealth": 3,
+		"collider": {
+			"boxes": [{"center": [0.0, 1.16, 0.0], "size": [1.8, 1.8, 0.8],}],
+			"doesCharacterCollide": true
+		},
+		"buildHeight": 1.0,
+		"dimensionsX": 2,
+		"dimensionsZ": 1,
+		"modules": {
+			"stockpile": {
+				"resourceName": "Scroll",
+				"capacity": 10,
+				"fillLevelObjectNames": ["Scrolls_01", "Scrolls_02", "Scrolls_03"],
+			},
+			"destroyable": {
+				"maxHealth": 10.0
+			}
+		}
+	},
+
 
 // Equipment Storage
 //******************
@@ -5175,7 +5500,7 @@
 		"requiredTech": ["masonry"],
 		"beauty": 20,
 		"collider": {
-			"boxes": [{"center": [0.0, 1.23, 0.06], "size": [0.8, 2.02, 0.82],}],
+			"boxes": [{"center": [0.0, 1.4, 0.06], "size": [0.8, 2.35, 0.82],}],
 			"doesCharacterCollide": true
 		},
 		"seasonalDescription": {
@@ -5229,7 +5554,7 @@
 		"requiredTech": ["masonry"],
 		"beauty": 20,
 		"collider": {
-			"boxes": [{"center": [0.0, 1.23, 0.06], "size": [0.8, 2.02, 0.82],}],
+			"boxes": [{"center": [0.0, 1.4, 0.06], "size": [0.8, 2.35, 0.82],}],
 			"doesCharacterCollide": true
 		},
 		"seasonalDescription": {
@@ -5532,7 +5857,7 @@
 		"wealth": 2,
 		"needsUpdate": true,
 		"collider": {
-			"boxes": [{"center": [0.0, 1.46614, 0.22], "size": [0.3, 0.9921, 0.38],}],
+			"boxes": [{"center": [0.0, 1.45, 0.22], "size": [0.3, 1.2, 0.38],}],
 			"doesCharacterCollide": false
 		},
 		"interactionOffset": [0, 0, 0],
@@ -5567,7 +5892,7 @@
 		"needsUpdate": true,
 		"requiredTech": ["furnitureI"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.784, 0.294], "size": [0.3, 0.9921, 0.38],}],
+			"boxes": [{"center": [0.0, 1.45, 0.22], "size": [0.3, 1.2, 0.38],}],
 			"doesCharacterCollide": false
 		},
 		"interactionOffset": [0, 0, 0],
@@ -5602,7 +5927,7 @@
 		"needsUpdate": true,
 		"requiredTech": ["furnitureI"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.46614, 0.22], "size": [0.3, 0.9921, 0.38],}],
+			"boxes": [{"center": [0.0, 1.45, 0.22], "size": [0.3, 1.2, 0.38],}],
 			"doesCharacterCollide": false
 		},
 		"interactionOffset": [0, 0, 0],
@@ -5637,7 +5962,7 @@
 		"needsUpdate": true,
 		"requiredTech": ["furnitureII"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.46614, 0.22], "size": [0.3, 0.9921, 0.38],}],
+			"boxes": [{"center": [0.0, 1.45, 0.22], "size": [0.3, 1.2, 0.38],}],
 			"doesCharacterCollide": false
 		},
 		"interactionOffset": [0, 0, 0],
@@ -5672,7 +5997,7 @@
 		"needsUpdate": true,
 		"requiredTech": ["forging"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.46614, 0.22], "size": [0.3, 0.9921, 0.38],}],
+			"boxes": [{"center": [0.0, 1.45, 0.22], "size": [0.3, 1.2, 0.38],}],
 			"doesCharacterCollide": false
 		},
 		"interactionOffset": [0, 0, 0],
@@ -5708,14 +6033,14 @@
 		"onlyInRoom": true,
 		"needsUpdate": true,
 		"collider": {
-			"boxes": [{"center": [0.0, 2.1, 0.0], "size": [0.8, 0.15, 0.8],}],
+			"boxes": [{"center": [0.0, 1.94, 0.0], "size": [0.8, 0.15, 0.8],}],
 			"doesCharacterCollide": false
 		},
 		"interactionTransforms": [{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.0,0.0,0.0],"rot":-90.0}],
 		"buildHeight": 0,
 		"modules": {
 			"light": {
-				"position": [0.0, 2.3, 0.0],
+				"position": [0.0, 2, 0.0],
 				"range": 10,
 				"intensity": 1,
 				"colorHSV": [0.12, 0.6, 1.0]
@@ -5727,6 +6052,106 @@
 		}
 	},
 	
+// Stairs
+// ******
+	"stairs0": {
+		"costResources": ["wood"],
+		"costCounts": [25],
+		"wealth": 1,
+		"beauty": 0,
+		"collider": {
+			"boxes": [{"center": [0.0, 1.5, 0.0], "size": [2.8, 2.8, 0.8],}],
+		},
+		"interactionOffset": [0, 0, 0],
+		"dimensionsX": 3,
+		"dimensionsZ": 1,
+		"precisionGridAllowed": false,
+		"needsUpdate": true,
+		"modules": {
+			"stairs": {
+				"lowerEnd": [1.8,0,0],
+				"upperEnd": [-1.8,2.3,0],
+				"waypoints": [
+					[1.8,0,0],
+					[-1.0,2.3,0]
+				]
+			}
+		}
+	},
+	"stairs1": {
+		"costResources": ["wood"],
+		"costCounts": [35],
+		"wealth": 3,
+		"beauty": 2,
+		"collider": {
+			"boxes": [{"center": [0.0, 1.5, 0.0], "size": [2.8, 2.8, 0.8],}],
+		},
+		"interactionOffset": [0, 0, 0],
+		"dimensionsX": 3,
+		"dimensionsZ": 1,
+		"precisionGridAllowed": false,
+		"needsUpdate": true,
+		"modules": {
+			"stairs": {
+				"lowerEnd": [1.8,0,0],
+				"upperEnd": [-1.8,2.3,0],
+				"waypoints": [
+					[1.8,0,0],
+					[-1.0,2.3,0]
+				]
+			}
+		}
+	},
+	"stairs2": {
+		"costResources": ["wood"],
+		"costCounts": [50],
+		"wealth": 5,
+		"beauty": 5,
+		"collider": {
+			"boxes": [{"center": [0.0, 1.5, 0.0], "size": [2.8, 2.8, 0.8],}],
+		},
+		"interactionOffset": [0, 0, 0],
+		"dimensionsX": 3,
+		"dimensionsZ": 1,
+		"precisionGridAllowed": false,
+		"needsUpdate": true,
+		"modules": {
+			"stairs": {
+				"lowerEnd": [1.8,0,0],
+				"upperEnd": [-1.8,2.3,0],
+				"waypoints": [
+					[1.8,0,0],
+					[-1.0,2.3,0]
+				]
+			}
+		}
+	},
+	"stairs3": {
+		"costResources": ["stone", "coins"],
+		"costCounts": [40, 150],
+		"wealth": 10,
+		"beauty": 10,
+		"collider": {
+			"boxes": [{"center": [0.0, 1.5, 0.0], "size": [2.8, 2.8, 0.8],}],
+		},
+		"interactionOffset": [0, 0, 0],
+		"dimensionsX": 3,
+		"dimensionsZ": 1,
+		"precisionGridAllowed": false,
+		"needsUpdate": true,
+		"modules": {
+			"stairs": {
+				"lowerEnd": [1.8,0,0],
+				"upperEnd": [-1.8,2.3,0],
+				"waypoints": [
+					[1.8,0,0],
+					[-1.0,2.3,0]
+				]
+			}
+		}
+	},
+
+
 //Doors
 //*****
 
@@ -5737,7 +6162,7 @@
 		"wealth": 0,
 		"beauty": 0,
 		"collider": {
-			"boxes": [{"center": [0.0, 1.2, 0.0], "size": [0.86, 2.2, 0.2],}],
+			"boxes": [{"center": [0.0, 1, 0.0], "size": [0.86, 1.8, 0.2],}],
 			"doesCharacterCollide": false,
 			"isTrigger": true
 		},
@@ -5758,7 +6183,7 @@
 		"beauty": 1,
 		"requiredTech": ["architectureI"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.2, 0.0], "size": [0.86, 2.2, 0.2],}],
+			"boxes": [{"center": [0.0, 1, 0.0], "size": [0.86, 1.8, 0.2],}],
 			"doesCharacterCollide": false,
 			"isTrigger": true
 		},
@@ -5779,7 +6204,7 @@
 		"beauty": 1,
 		"requiredTech": ["architectureI"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.2, 0.0], "size": [0.86, 2.2, 0.2],}],
+			"boxes": [{"center": [0.0, 1, 0.0], "size": [0.86, 1.8, 0.2],}],
 			"doesCharacterCollide": false,
 			"isTrigger": true
 		},
@@ -5800,7 +6225,7 @@
 		"beauty": 2,
 		"requiredTech": ["architectureII"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.2, 0.0], "size": [0.86, 2.2, 0.2],}],
+			"boxes": [{"center": [0.0, 1, 0.0], "size": [0.86, 1.8, 0.2],}],
 			"doesCharacterCollide": false,
 			"isTrigger": true
 		},
@@ -5824,7 +6249,7 @@
 		"wealth": 0,
 		"beauty": 0,
 			"collider": {
-			"boxes": [{"center": [-0.02, 1.65, 0.0], "size": [0.7, 1.3, 0.152],}],
+			"boxes": [{"center": [-0.02, 1.38, 0.0], "size": [0.7, 1.3, 0.152],}],
 			"doesCharacterCollide": false,
 			"isTrigger": true
 		},
@@ -5845,7 +6270,7 @@
 		"beauty": 2,
 		"requiredTech": ["architectureI"],
 		"collider": {
-			"boxes": [{"center": [-0.02, 1.65, 0.0], "size": [0.7, 1.3, 0.152],}],
+			"boxes": [{"center": [-0.02, 1.38, 0.0], "size": [0.7, 1.3, 0.152],}],
 			"doesCharacterCollide": false,
 			"isTrigger": true
 		},
@@ -5866,7 +6291,7 @@
 		"beauty": 2,
 		"requiredTech": ["architectureI"],
 		"collider": {
-			"boxes": [{"center": [-0.02, 1.65, 0.0], "size": [0.7, 1.3, 0.152],}],
+			"boxes": [{"center": [-0.02, 1.38, 0.0], "size": [0.7, 1.3, 0.152],}],
 			"doesCharacterCollide": false,
 			"isTrigger": true
 		},
@@ -5887,7 +6312,7 @@
 		"beauty": 3,
 		"requiredTech": ["architectureII"],
 		"collider": {
-			"boxes": [{"center": [-0.02, 1.65, 0.0], "size": [0.7, 1.3, 0.152],}],
+			"boxes": [{"center": [-0.02, 1.38, 0.0], "size": [0.7, 1.3, 0.152],}],
 			"doesCharacterCollide": false,
 			"isTrigger": true
 		},
@@ -5908,7 +6333,7 @@
 		"beauty": 3,
 		"requiredTech": ["architectureII"],
 		"collider": {
-			"boxes": [{"center": [-0.02, 1.65, 0.0], "size": [0.7, 1.3, 0.152],}],
+			"boxes": [{"center": [-0.02, 1.38, 0.0], "size": [0.7, 1.3, 0.152],}],
 			"doesCharacterCollide": false,
 			"isTrigger": true
 		},
@@ -6440,7 +6865,7 @@
 		"costResources": ["wood"],
 		"costCounts": [5],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6448,6 +6873,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 1.0
+			}
 		}
 	},
 	"woodPillar0Variation1": {
@@ -6457,7 +6885,7 @@
 		"costCounts": [7],
 		"requiredTech": ["woodworking"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6465,6 +6893,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 1.0
+			}
 		}
 	},
 	"woodPillar0Variation2": {
@@ -6474,7 +6905,7 @@
 		"costCounts": [7],
 		"requiredTech": ["woodworking"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6482,6 +6913,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 1.0
+			}
 		}
 	},
 	"woodPillar0Variation3": {
@@ -6491,7 +6925,7 @@
 		"costCounts": [7],
 		"requiredTech": ["woodworking"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6499,6 +6933,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 1.0
+			}
 		}
 	},
 	"woodPillar0Variation4": {
@@ -6508,7 +6945,7 @@
 		"costCounts": [7],
 		"requiredTech": ["woodworking"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6516,6 +6953,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 1.0
+			}
 		}
 	},
 	"woodPillar0Variation5": {
@@ -6525,7 +6965,7 @@
 		"costCounts": [7],
 		"requiredTech": ["woodworking"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6533,6 +6973,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 1.0
+			}
 		}
 	},
 	"woodPillar1Variation0": {
@@ -6542,7 +6985,7 @@
 		"costCounts": [8, 5],
 		"requiredTech": ["architectureI"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6550,6 +6993,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 2.0
+			}
 		}
 	},
 	"woodPillar1Variation1": {
@@ -6559,7 +7005,7 @@
 		"costCounts": [10, 5],
 		"requiredTech": ["architectureI"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6567,6 +7013,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 2.0
+			}
 		}
 	},
 	"woodPillar1Variation2": {
@@ -6576,7 +7025,7 @@
 		"costCounts": [10, 5],
 		"requiredTech": ["architectureI"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6584,6 +7033,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 2.0
+			}
 		}
 	},
 	"woodPillar1Variation3": {
@@ -6592,7 +7044,7 @@
 		"costCounts": [10, 5],
 		"requiredTech": ["architectureI"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6600,6 +7052,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 2.0
+			}
 		}
 	},
 	"woodPillar1Variation4": {
@@ -6609,7 +7064,7 @@
 		"costCounts": [10, 5],
 		"requiredTech": ["architectureI"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6617,6 +7072,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 2.0
+			}
 		}
 	},
 	"woodPillar1Variation5": {
@@ -6626,7 +7084,7 @@
 		"costCounts": [15, 7],
 		"requiredTech": ["architectureI"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6634,6 +7092,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 2.0
+			}
 		}
 	},
 	"woodPillar2": {
@@ -6643,7 +7104,7 @@
 		"costCounts": [15, 7],
 		"requiredTech": ["architectureII"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6651,6 +7112,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 2.0
+			}
 		}
 	},
 	"stonePillar0": {
@@ -6660,7 +7124,7 @@
 		"costCounts": [10],
 		"requiredTech": ["masonry"],
 		"collider": {
-			"boxes": [{"center": [0.0, 1.1, 0.0], "size": [0.12, 2, 0.12],}],
+			"boxes": [{"center": [0.0, 1.05, 0.0], "size": [0.12, 1.9, 0.12],}],
 			"doesCharacterCollide": true
 		},
 		"interactionTransforms": [{"pos":[0.5,0.0,-0.5],"rot":-45.0},{"pos":[0.0,0.0,-0.75],"rot":0.0},{"pos":[-0.75,0.0,0.0],"rot":90.0},{"pos":[0.75,0.0,0.0],"rot":-90.0},{"pos":[0.5,0.0,0.5],"rot":225.0},{"pos":[0.0,0.0,0.75],"rot":180.0},{"pos":[-0.5,0.0,-0.5],"rot":45.0},{"pos":[-0.5,0.0,0.5],"rot":135.0}],
@@ -6668,6 +7132,9 @@
 		"dimensionsZ": 0,
 		"isPillar": true,
 		"modules": {
+			"pillar": {
+				"stabilityRadius": 3.0
+			}
 		}
 	},
 	
@@ -6949,7 +7416,8 @@
 			},
 			"designatable": {
 				"designationName": "mine"
-			}
+			},
+			"animation": {}
 		}
 	},
 	"ironOre": {
@@ -6973,7 +7441,7 @@
 				"resourceName": "ironOre",
 				"workSeconds": 50,
 				"resourcesPerRound": 1,
-				"remainingRounds": 20,
+				"remainingRounds": 30,
 				"requiredSkill": "MiningIron"
 
 			},
@@ -7056,7 +7524,7 @@
 				"workSeconds": 35,
 				"resourcesPerRound": 10,
 				"remainingRounds": 2,
-				"replacementFurniture": "tree_01Stump"
+				"replacementFurniture": "tree_01Stump",
 			},
 			"interactionIcon": {
 				"icon": "tree"
@@ -7066,7 +7534,8 @@
 			},
 			"designatable": {
 				"designationName": "cutTree"
-			}
+			},
+			"animation": {}
 		}
 	},
 	"tree_01Stump": {
@@ -7136,7 +7605,8 @@
 			},
 			"designatable": {
 				"designationName": "cutTree"
-			}
+			},
+			"animation": {}
 		}
 	},
 	"tree_02Stump": {
@@ -7206,7 +7676,8 @@
 			},
 			"designatable": {
 				"designationName": "cutTree"
-			}
+			},
+			"animation": {}
 		}
 	},
 	"tree_03Stump": {
@@ -7276,7 +7747,8 @@
 			},
 			"designatable": {
 				"designationName": "cutTree"
-			}
+			},
+			"animation": {}
 		}
 	},
 	"tree_04Stump": {
@@ -7346,7 +7818,8 @@
 			},
 			"designatable": {
 				"designationName": "cutTree"
-			}
+			},
+			"animation": {}
 		}
 	},
 	"tree_05Stump": {
@@ -7735,7 +8208,8 @@
 			},
 			"designatable": {
 				"designationName": "mine"
-			}
+			},
+			"animation": {}
 		}
 	},
 	"rock_02": {
@@ -7769,7 +8243,8 @@
 			},
 			"designatable": {
 				"designationName": "mine"
-			}
+			},
+			"animation": {}
 		}
 	},
 	"rock_03": {
@@ -7803,7 +8278,8 @@
 			},
 			"designatable": {
 				"designationName": "mine"
-			}
+			},
+			"animation": {}
 		}
 	},
 	"rock_04": {
@@ -7837,7 +8313,8 @@
 			},
 			"designatable": {
 				"designationName": "mine"
-			}
+			},
+			"animation": {}
 		}
 	},
 	"rock_05": {
@@ -7871,7 +8348,8 @@
 			},
 			"designatable": {
 				"designationName": "mine"
-			}
+			},
+			"animation": {}
 		}
 	},
 		"groundCentre": {
