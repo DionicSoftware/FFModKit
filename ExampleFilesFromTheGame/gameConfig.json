@@ -1,0 +1,85 @@
+{
+	 // PLAYER EXPERIENCE
+    "cameraSpeed": 5.6,
+    "cameraRotationXLowerLimit": 0,
+    "cameraRotationXUpperLimit": 0,
+    "cameraZoomMinimum": 0.1,
+    "cameraZoomMaximum": 1.4,
+    "defaultTimeToNotificationVanish": 90,
+
+    // GAME RULES
+    "instantFurnitureMovement": false,
+    "instantBuilding": false,
+    "maxFloorLevels": 11,
+    "secondsPerDay": 600,
+    "daysPerSeason": 5,
+    "tradeDiscountPercentage": 0.15,
+    "buildingRefundPercentage": 0.333,
+
+    // HUMANS
+    "humanMaxHealth": 100,
+    "humanEnergyDecreaseRate": 1,
+    "humanHungerRate": 1,
+    "thoughtsDesiredFoodForWinter": 15,
+
+    "satisfactionPointCostMaxHealth": 2,
+    "satisfactionPointCostCureIllness": 2,
+    "satisfactionPointCostMotivationBoost": 1,
+    "satisfactionPointCostForgetBadCosts": 1,
+
+    // DIPLOMACY
+    "diplomacyFriendlyRelationsThreshold": 25,
+    "diplomacyAttackOnSightRelationsThreshold": -10,
+    "diplomacyTributeDenialRelationsThreshold": -35,
+
+    // FACTIONS
+
+    // GOBLINS
+    "goblinsBluePrintWaitTime": 600,
+    "goblinsRestockTradingWaitTime": 600,
+
+    "goblinDaysToNextActionMinimum": 7,
+    "goblinDaysToNextActionMaximum": 15,
+
+    "goblinMeleeWeapons": ["clubWood", "clubStone", "clubRitual"],
+    "goblinRangedWeapons": ["bow"],
+    "goblinArmors": ["armorTikiMedium", "armorTikiHeavy"],
+
+    // PIRATES
+    "minimumRaidDifficultyForPirates": 50,
+
+    "pirateCaptainArmor": "pirateCaptainGear0",
+    "pirateCaptainWeapon": "cutlassCaptain",
+    "pirateSailorArmor": "pirateSailorGear0",
+    "pirateSailorWeapon": "cutlassSailor",
+
+    // TRADERS
+    "traderDaysToNextVisitMinimum": 4,
+    "traderDaysToNextVisitMaximum": 6,
+
+    "traderArmor": "traderGear",
+    //"traderWeapon": "",
+    "traderGuardArmor": "armorTraderGuard",
+    "traderGuardWeapon": "swordIronTraderGuard",
+
+    // MIGRANTS
+    "migrantsDaysToNextVisitTinyColony": 1,
+    "migrantsDaysToNextVisitSmallColony": 2,
+    "migrantsDaysToNextVisitMediumColony": 3,
+    "migrantsDaysToNextVisitLargeColony": 4,
+
+    // GAME EVENT MANAGEMENT
+    "daysToNextBadEventMinimum": 9,
+    "daysToNextBadEventMaximum": 15,
+
+    "daysToNextHurtEventMinimum": 7,
+    "daysToNextHurtEventMaximum": 12,
+
+    // SPECIFIC GAME EVENTS
+    "crazyColonistEventDurationDays": 150,
+    "destroyingFurnitureEventDurationDays": 150,
+    "lazyDayEventDurationDays": 500,
+    "notWorkignColonistEventDurationDays": 700,
+
+    "partyCostCoins": 100,
+}
