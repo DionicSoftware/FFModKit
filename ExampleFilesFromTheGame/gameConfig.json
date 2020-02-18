@@ -15,6 +15,7 @@
     "daysPerSeason": 5,
     "tradeDiscountPercentage": 0.15,
     "buildingRefundPercentage": 0.333,
+	"maxColonists": 13,
 
     // HUMANS
     "humanMaxHealth": 100,
@@ -26,6 +27,14 @@
     "satisfactionPointCostCureIllness": 2,
     "satisfactionPointCostMotivationBoost": 1,
     "satisfactionPointCostForgetBadCosts": 1,
+
+	// anything over 10000 will stop aging completely
+	"daysChildMin": 18,
+	"daysChildMax": 18,
+	"daysAdultMin": 70,
+	"daysAdultMax": 70,
+	"daysElderMin": 9,
+	"daysElderMax": 45,
 
     // DIPLOMACY
     "diplomacyFriendlyRelationsThreshold": 25,
@@ -64,9 +73,9 @@
 
     // MIGRANTS
     "migrantsDaysToNextVisitTinyColony": 1,
-    "migrantsDaysToNextVisitSmallColony": 2,
-    "migrantsDaysToNextVisitMediumColony": 3,
-    "migrantsDaysToNextVisitLargeColony": 4,
+    "migrantsDaysToNextVisitSmallColony": 3,
+    "migrantsDaysToNextVisitMediumColony": 9,
+    "migrantsDaysToNextVisitLargeColony": 30,
 
     // GAME EVENT MANAGEMENT
     "daysToNextBadEventMinimum": 9,
