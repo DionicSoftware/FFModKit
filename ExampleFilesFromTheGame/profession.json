@@ -1,0 +1,475 @@
+{
+	"skills": {
+
+	// FORESTER
+		"foresterBasics": {
+			"professionName": "forester",
+			"requiredExperiencePoints": 0,
+			"predecessors": [],
+			"locationX": 1,
+			"locationY": 0,
+		},
+		"woodcuttingStoneTools": {
+			"professionName": "forester",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["foresterBasics"],
+			"locationX": 0,
+			"locationY": 1,
+		},
+		"woodcuttingMetalTools": {
+			"professionName": "forester",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["woodcuttingStoneTools"],
+			"locationX": 0,
+			"locationY": 2,
+		},
+		"growingTrees": {
+			"professionName": "forester",
+			"requiredExperiencePoints": 2,
+			"predecessors": ["foresterBasics"],
+			"locationX": 1,
+			"locationY": 1,
+		},
+		"growingAppleTrees": {
+			"professionName": "forester",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["growingTrees"],
+			"locationX": 1,
+			"locationY": 2,
+		},
+		"growingCotton": {
+			"professionName": "forester",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["growingAppleTrees"],
+			"locationX": 1,
+			"locationY": 3,
+		},
+		"foresterMasterOutfit": {
+			"professionName": "forester",
+			"requiredExperiencePoints": 2,
+			"predecessors": ["foresterBasics"],
+			"locationX": 2,
+			"locationY": 1,
+		},
+
+	// MINER
+		"miningIron": {
+			"professionName": "miner",
+			"requiredExperiencePoints": 2,
+			"predecessors": ["minerBasics"],
+			"locationX": 0.5,
+			"locationY": 1,
+		},
+		//"crystalGrowing": {
+		//	"professionName": "miner",
+		//	"requiredExperiencePoints": 2,
+		//	"predecessors": ["miningIron"],
+		//	"locationX": 0.5,
+		//	"locationY": 2,
+		//},
+		"minerBasics": {
+			"professionName": "miner",
+			"requiredExperiencePoints": 0,
+			"predecessors": [],
+			"locationX": 1,
+			"locationY": 0,
+		},
+		"miningStoneTools": {
+			"professionName": "miner",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["minerBasics"],
+			"locationX": -0.5,
+			"locationY": 1,
+		},
+		"miningMetalTools": {
+			"professionName": "miner",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["miningStoneTools"],
+			"locationX": -0.5,
+			"locationY": 2,
+		},
+		"deepStoneMine": {
+			"professionName": "miner",
+			"requiredExperiencePoints": 3,
+			"predecessors": ["minerBasics"],
+			"locationX": 1.5,
+			"locationY": 1,
+		},
+		"deepIronMine": {
+			"professionName": "miner",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["deepStoneMine", "miningIron"],
+			"locationX": 1,
+			"locationY": 2,
+		},
+		"deepCrystalMine": {
+			"professionName": "miner",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["deepIronMine"],
+			"locationX": 1,
+			"locationY": 3,
+		},
+		"minerMasterOutfit": {
+			"professionName": "miner",
+			"requiredExperiencePoints": 2,
+			"predecessors": ["minerBasics"],
+			"locationX": 2.5,
+			"locationY": 1,
+		},
+
+	// FARMER
+		"farmerBasics": {
+			"professionName": "farmer",
+			"requiredExperiencePoints": 0,
+			"predecessors": [],
+			"locationX": 1,
+			"locationY": 0,
+		},
+		"sowStrawberries": {
+			"professionName": "farmer",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["farmerBasics"],
+			"locationX": 0,
+			"locationY": 1,
+		},
+		"sowWheat": {
+			"professionName": "farmer",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["sowStrawberries"],
+			"locationX": 0,
+			"locationY": 2,
+		},
+		"campfireCooking": {
+			"professionName": "farmer",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["farmerBasics"],
+			"locationX": 1,
+			"locationY": 1,
+		},
+		"kitchenCooking": {
+			"professionName": "farmer",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["campfireCooking"],
+			"locationX": 1,
+			"locationY": 2,
+		},
+		"bakeryCooking": {
+			"professionName": "farmer",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["kitchenCooking"],
+			"locationX": 1,
+			"locationY": 3,
+		},
+//		"animalCare": {
+//			"professionName": "farmer",
+//			"requiredExperiencePoints": 1,
+//			"predecessors": ["farmerBasics"],
+//			"locationX": 1.5,
+//			"locationY": 1,
+//		},
+//		"shearingSheep": {
+//			"professionName": "farmer",
+//			"requiredExperiencePoints": 1,
+//			"predecessors": ["animalCare"],
+//			"locationX": 1.5,
+//			"locationY": 2,
+//		},
+		"farmerMasterOutfit": {
+			"professionName": "farmer",
+			"requiredExperiencePoints": 2,
+			"predecessors": ["farmerBasics"],
+			"locationX": 2,
+			"locationY": 1,
+		},
+
+	// CRAFTSMAN
+		"craftsmanBasics": {
+			"professionName": "craftsman",
+			"requiredExperiencePoints": 0,
+			"predecessors": [],
+			"locationX": 1,
+			"locationY": 0,
+		},
+		"forging": {
+			"professionName": "craftsman",
+			"requiredExperiencePoints": 3,
+			"predecessors": ["craftsmanBasics"],
+			"locationX": -0.5,
+			"locationY": 1,
+		},
+		"makingBows": {
+			"professionName": "craftsman",
+			"requiredExperiencePoints": 2,
+			"predecessors": ["craftsmanBasics"],
+			"locationX": 0.5,
+			"locationY": 1,
+		},
+		"tailoring": {
+			"professionName": "craftsman",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["craftsmanBasics"],
+			"locationX": 1.5,
+			"locationY": 1,
+		},
+//		"weaving": {
+//			"professionName": "craftsman",
+//			"requiredExperiencePoints": 1,
+//			"predecessors": ["tailoring"],
+//			"locationX": 1,
+//			"locationY": 2,
+//		},
+//		"tailoringMaster": {
+//			"professionName": "craftsman",
+//			"requiredExperiencePoints": 1,
+//			"predecessors": ["tailoring"],
+//			"locationX": 2,
+//			"locationY": 2,
+//		},
+		"craftsmanMasterOutfit": {
+			"professionName": "craftsman",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["craftsmanBasics"],
+			"locationX": 2.5,
+			"locationY": 1,
+		},
+
+	// DOCTOR
+		"doctorBasics": {
+			"professionName": "doctor",
+			"requiredExperiencePoints": 0,
+			"predecessors": [],
+			"locationX": 1,
+			"locationY": 0,
+		},
+		"fluTreatment": {
+			"professionName": "doctor",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["doctorBasics"],
+			"locationX": 0,
+			"locationY": 1,
+		},
+		"makingMedicalPotions": {
+			"professionName": "doctor",
+			"requiredExperiencePoints": 2,
+			"predecessors": ["fluTreatment"],
+			"locationX": -0.5,
+			"locationY": 2,
+		},
+		"betterFluTreatments": {
+			"professionName": "doctor",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["fluTreatment"],
+			"locationX": 0.5,
+			"locationY": 2,
+		},
+		"applySplints": {
+			"professionName": "doctor",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["doctorBasics"],
+			"locationX": 1.5,
+			"locationY": 1,
+		},
+		"splintMaster": {
+			"professionName": "doctor",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["applySplints"],
+			"locationX": 1.5,
+			"locationY": 2,
+		},
+		"doctorMasterOutfit": {
+			"professionName": "doctor",
+			"requiredExperiencePoints": 2,
+			"predecessors": ["doctorBasics"],
+			"locationX": 2.5,
+			"locationY": 1,
+		},
+//		"psychology": {
+//			"professionName": "doctor",
+//			"requiredExperiencePoints": 2,
+//			"predecessors": ["doctorMasterOutfit"],
+//			"locationX": 2.5,
+//			"locationY": 2,
+//		},
+
+	// SCHOLAR
+		"scholarBasics": {
+			"professionName": "scholar",
+			"requiredExperiencePoints": 0,
+			"predecessors": [],
+			"locationX": 1,
+			"locationY": 0,
+		},
+		"researchScrolls": {
+			"professionName": "scholar",
+			"requiredExperiencePoints": 4,
+			"predecessors": ["scholarBasics"],
+			"locationX": 0,
+			"locationY": 1,
+		},
+		"teaching": {
+			"professionName": "scholar",
+			"requiredExperiencePoints": 2,
+			"predecessors": ["scholarBasics"],
+			"locationX": 1,
+			"locationY": 1,
+		},
+		"scholarMasterOutfit": {
+			"professionName": "scholar",
+			"requiredExperiencePoints": 3,
+			"predecessors": ["scholarBasics"],
+			"locationX": 2,
+			"locationY": 1,
+		},
+
+	// Soldier
+		"soldierBasics": {
+			"professionName": "soldier",
+			"requiredExperiencePoints": 0,
+			"predecessors": [],
+			"locationX": 1,
+			"locationY": 0,
+		},
+		"fightWoodenSwords": {
+			"professionName": "soldier",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["soldierBasics"],
+			"locationX": -0.5,
+			"locationY": 1,
+		},
+		"fightStoneSwords": {
+			"professionName": "soldier",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["fightWoodenSwords"],
+			"locationX": -0.5,
+			"locationY": 2,
+		},
+		"fightMetalSwords": {
+			"professionName": "soldier",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["fightStoneSwords"],
+			"locationX": -0.5,
+			"locationY": 3,
+		},
+		"fightBow": {
+			"professionName": "soldier",
+			"requiredExperiencePoints": 2,
+			"predecessors": ["soldierBasics"],
+			"locationX": 0.5,
+			"locationY": 1,
+		},
+		"martialArts": {
+			"professionName": "soldier",
+			"requiredExperiencePoints": 1,
+			"predecessors": ["soldierBasics"],
+			"locationX": 1.5,
+			"locationY": 1,
+		},
+		"sneaking": {
+			"professionName": "soldier",
+			"requiredExperiencePoints": 2,
+			"predecessors": ["martialArts"],
+			"locationX": 1.5,
+			"locationY": 2,
+		},
+		"mediumArmor": {
+			"professionName": "soldier",
+			"requiredExperiencePoints": 2,
+			"predecessors": ["soldierBasics"],
+			"locationX": 2.5,
+			"locationY": 1,
+		},
+		"heavyArmor": {
+			"professionName": "soldier",
+			"requiredExperiencePoints": 2,
+			"predecessors": ["mediumArmor"],
+			"locationX": 2.5,
+			"locationY": 2,
+		},
+	},
+	"specializations": {
+	
+		// FORESTER
+		"chopTrees": {
+			"professionNames": ["forester"],
+			"requiredSkill": "",
+		},
+		"growTrees": {
+			"professionNames": ["forester"],
+			"requiredSkill": "",
+		},
+
+		// CRAFTSMAN
+		"carpenting": {
+			"professionNames": ["craftsman"],
+			"requiredSkill": "",
+		},
+		"tailoring": {
+			"professionNames": ["craftsman"],
+			"requiredSkill": "",
+		},
+		"masonry": {
+			"professionNames": ["craftsman"],
+			"requiredSkill": "",
+		},
+		"forging": {
+			"professionNames": ["craftsman"],
+			"requiredSkill": "",
+		},
+
+		// MINER
+		"mineStone": {
+			"professionNames": ["miner"],
+			"requiredSkill": "",
+		},
+		"mineIron": {
+			"professionNames": ["miner"],
+			"requiredSkill": "",
+		},
+		"mineCrystal": {
+			"professionNames": ["miner", "scholar"],
+			"requiredSkill": "",
+		},
+
+		// FARMER
+		"tendToFields": {
+			"professionNames": ["farmer"],
+			"requiredSkill": "",
+		},
+		"cook": {
+			"professionNames": ["farmer"],
+			"requiredSkill": "",
+		},
+		"harvestCotton": {
+			"professionNames": ["farmer"],
+			"requiredSkill": "",
+		},
+		"harvestApples": {
+			"professionNames": ["farmer"],
+			"requiredSkill": "",
+		},
+
+		// DOCTOR
+		"tendToPatients": {
+			"professionNames": ["doctor"],
+			"requiredSkill": "",
+		},
+		"produceMedicine": {
+			"professionNames": ["doctor"],
+			"requiredSkill": "",
+		},
+		"buryDead": {
+			"professionNames": ["doctor"],
+			"requiredSkill": "",
+		},
+		"brewBeer": {
+			"professionNames": ["doctor"],
+			"requiredSkill": "",
+		},
+
+		// SCHOLAR
+		"performResearch": {
+			"professionNames": ["scholar"],
+			"requiredSkill": "",
+		},
+	},
+}
