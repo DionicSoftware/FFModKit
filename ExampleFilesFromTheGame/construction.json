@@ -96,6 +96,16 @@
 		"costResources": ["cotton"],
 		"costCounts": [10]
 	},
+	"carpetChildNight_": {
+		"requiredTech": ["architectureI"],
+		"costResources": ["cotton"],
+		"costCounts": [10]
+	},
+	"carpetChildCircles_": {
+		"requiredTech": ["architectureI"],
+		"costResources": ["cotton"],
+		"costCounts": [10]
+	},
 
 
 // Paths
@@ -165,21 +175,21 @@
 		"costResources": ["stone"],
 		"costCounts": [8],
 		"usesNumberRepetition": true,
-		"health": 10,
+		"health": 13,
 	},
 	"stoneWallCleanBricks": {
 		"requiredTech": ["masonry"],
 		"costResources": ["stone"],
 		"costCounts": [10],
 		"usesNumberRepetition": true,
-		"health": 15,
+		"health": 17,
 	},
 	"stoneWallCleanTile": {
 		"requiredTech": ["architectureII"],
 		"costResources": ["stone"],
 		"costCounts": [12],
 		"usesNumberRepetition": true,
-		"health": 15,
+		"health": 17,
 	},
 
 // Hybrid Walls
@@ -190,26 +200,26 @@
 		"costResources": ["wood", "stone"],
 		"costCounts": [15, 10],
 		"usesSymmetryRepetition": true,
-		"health": 12,
+		"health": 14,
 	},
 	"fachwerk1Wall": {
 		"requiredTech": ["architectureII"],
 		"costResources": ["wood", "stone"],
 		"costCounts": [15, 10],
 		"usesSymmetryRepetition": true,
-		"health": 12,
+		"health": 14,
 	},
 	"fachwerk2Wall": {
 		"requiredTech": ["architectureII"],
 		"costResources": ["wood", "stone"],
 		"costCounts": [15, 10],
-		"health": 12,
+		"health": 14,
 	},
 	"fachwerk3Wall": {
 		"requiredTech": ["architectureII"],
 		"costResources": ["wood","stone"],
 		"costCounts": [15, 10],
-		"health": 12,
+		"health": 14,
 	},
 
 // Fences
@@ -251,6 +261,42 @@
 		"fencePostName": "fenceWoodLogLeatherPost",
 		"fencePostMultipleModelCount": 2,
 		"health": 7,
+	},
+	"fenceStone0": {
+		"requiredTech": ["stoneFurniture"],
+		"costResources": ["stone"],
+		"costCounts": [6],
+		"usesNumberRepetition": false,
+		"isFence": true,
+		//"seasonalDescription": {
+		//	"objectsToConfigure": ["snow"],
+		//	"springMaterials": [""],
+		//	"summerMaterials": [""],
+		//	"autumnMaterials": [""],
+		//	"winterMaterials": ["snow"]
+		//},
+		"fencePostPriority": 70,
+		"fencePostName": "fenceStone0Post",
+		"fencePostMultipleModelCount": 1,
+		"health": 10,
+	},
+	"fenceStone1": {
+		"requiredTech": ["stoneFurniture"],
+		"costResources": ["stone"],
+		"costCounts": [6],
+		"usesNumberRepetition": false,
+		"isFence": true,
+		//"seasonalDescription": {
+		//	"objectsToConfigure": ["snow"],
+		//	"springMaterials": [""],
+		//	"summerMaterials": [""],
+		//	"autumnMaterials": [""],
+		//	"winterMaterials": ["snow"]
+		//},
+		"fencePostPriority": 75,
+		"fencePostName": "fenceStone1Post",
+		"fencePostMultipleModelCount": 1,
+		"health": 10,
 	},
 
 	

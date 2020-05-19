@@ -1,6 +1,7 @@
 {
-	 // PLAYER EXPERIENCE
+    // PLAYER EXPERIENCE
     "cameraSpeed": 5.6,
+    "cameraSpeedKeyboard": 2.0,
     "cameraRotationXLowerLimit": 0,
     "cameraRotationXUpperLimit": 0,
     "cameraZoomMinimum": 0.1,
@@ -29,12 +30,12 @@
     "satisfactionPointCostForgetBadCosts": 1,
 
 	// anything over 10000 will stop aging completely
-	"daysChildMin": 18,
-	"daysChildMax": 18,
-	"daysAdultMin": 70,
-	"daysAdultMax": 70,
-	"daysElderMin": 9,
-	"daysElderMax": 45,
+	"daysChildMin": 30,
+	"daysChildMax": 30,
+	"daysAdultMin": 126,
+	"daysAdultMax": 126,
+	"daysElderMin": 16,
+	"daysElderMax": 81,
 
     // DIPLOMACY
     "diplomacyFriendlyRelationsThreshold": 25,
@@ -55,7 +56,7 @@
     "goblinArmors": ["armorTikiMedium", "armorTikiHeavy"],
 
     // PIRATES
-    "minimumRaidDifficultyForPirates": 50,
+    "minimumRaidDifficultyForPirates": 70,
 
     "pirateCaptainArmor": "pirateCaptainGear0",
     "pirateCaptainWeapon": "cutlassCaptain",
@@ -74,8 +75,8 @@
     // MIGRANTS
     "migrantsDaysToNextVisitTinyColony": 1,
     "migrantsDaysToNextVisitSmallColony": 3,
-    "migrantsDaysToNextVisitMediumColony": 9,
-    "migrantsDaysToNextVisitLargeColony": 30,
+    "migrantsDaysToNextVisitMediumColony": 8,
+    "migrantsDaysToNextVisitLargeColony": 20,
 
     // GAME EVENT MANAGEMENT
     "daysToNextBadEventMinimum": 9,
@@ -90,5 +91,5 @@
     "lazyDayEventDurationDays": 500,
     "notWorkignColonistEventDurationDays": 700,
 
-    "partyCostCoins": 100,
+    "partyCostCoins": 100
 }
