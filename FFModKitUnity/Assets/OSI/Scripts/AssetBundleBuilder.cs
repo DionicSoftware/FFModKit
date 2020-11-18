@@ -26,7 +26,7 @@ public class AssetBundleBuilder
         List<Object> assets = new List<Object>();
         foreach (string filePath in Directory.EnumerateFiles(path, "*.*", SearchOption.AllDirectories))
         {
-            if (Path.GetExtension(path == ".meta")) continue;
+            if (Path.GetExtension(path) == ".meta") continue;
 
             GameObject go = AssetDatabase.LoadAssetAtPath<GameObject>(filePath);
             if (go != null)
