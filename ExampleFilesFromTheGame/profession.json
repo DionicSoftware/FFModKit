@@ -387,89 +387,101 @@
 		},
 	},
 	"specializations": {
-	
+
 		// FORESTER
 		"chopTrees": {
-			"professionNames": ["forester"],
-			"requiredSkill": "",
+			"professionNames": [ "forester" ],
+			"requiredSkill": ""
 		},
-		"growTrees": {
-			"professionNames": ["forester"],
-			"requiredSkill": "",
-		},
+    "growTrees": {
+      "professionNames": [ "forester" ],
+      "requiredSkill": ""
+    },
+    "clearStumps": {
+      "professionNames": [ "forester" ],
+      "requiredSkill":  ""
+    },
 
-		// CRAFTSMAN
+    // CRAFTSMAN
 		"carpenting": {
-			"professionNames": ["craftsman"],
-			"requiredSkill": "",
+			"professionNames": [ "craftsman" ],
+			"requiredSkill": ""
+		},
+		"weaving": {
+			"professionNames": [ "craftsman" ],
+			"requiredSkill": ""
 		},
 		"tailoring": {
-			"professionNames": ["craftsman"],
-			"requiredSkill": "",
+			"professionNames": [ "craftsman" ],
+			"requiredSkill": ""
 		},
 		"masonry": {
-			"professionNames": ["craftsman"],
-			"requiredSkill": "",
+			"professionNames": [ "craftsman" ],
+			"requiredSkill": ""
 		},
 		"forging": {
-			"professionNames": ["craftsman"],
-			"requiredSkill": "",
+			"professionNames": [ "craftsman" ],
+			"requiredSkill": ""
 		},
 
 		// MINER
 		"mineStone": {
-			"professionNames": ["miner"],
-			"requiredSkill": "",
+			"professionNames": [ "miner" ],
+			"requiredSkill": ""
 		},
 		"mineIron": {
-			"professionNames": ["miner"],
-			"requiredSkill": "",
+			"professionNames": [ "miner" ],
+			"requiredSkill": ""
 		},
 		"mineCrystal": {
-			"professionNames": ["miner", "scholar"],
-			"requiredSkill": "",
+			"professionNames": [ "miner", "scholar" ],
+			"requiredSkill": ""
 		},
 
 		// FARMER
 		"tendToFields": {
-			"professionNames": ["farmer"],
-			"requiredSkill": "",
+			"professionNames": [ "farmer" ],
+			"requiredSkill": ""
 		},
 		"cook": {
-			"professionNames": ["farmer"],
-			"requiredSkill": "",
+			"professionNames": [ "farmer" ],
+			"requiredSkill": ""
 		},
 		"harvestCotton": {
-			"professionNames": ["farmer"],
-			"requiredSkill": "",
+			"professionNames": [ "farmer" ],
+			"requiredSkill": ""
 		},
 		"harvestApples": {
-			"professionNames": ["farmer"],
-			"requiredSkill": "",
+			"professionNames": [ "farmer" ],
+			"requiredSkill": ""
+		},
+		"careForAnimals": {
+			"professionNames": [ "farmer" ],
+			"requiredSkill": ""
 		},
 
 		// DOCTOR
 		"tendToPatients": {
-			"professionNames": ["doctor"],
-			"requiredSkill": "",
+			"professionNames": [ "doctor" ],
+			"requiredSkill": ""
 		},
 		"produceMedicine": {
-			"professionNames": ["doctor"],
-			"requiredSkill": "",
+			"professionNames": [ "doctor" ],
+			"requiredSkill": ""
 		},
 		"buryDead": {
-			"professionNames": ["doctor"],
-			"requiredSkill": "",
+			"professionNames": [ "doctor" ],
+			"requiredSkill": ""
 		},
 		"brewBeer": {
-			"professionNames": ["doctor"],
-			"requiredSkill": "",
+			"professionNames": [ "doctor" ],
+			"requiredSkill": ""
 		},
 
 		// SCHOLAR
 		"performResearch": {
-			"professionNames": ["scholar"],
-			"requiredSkill": "",
-		},
+			"professionNames": [ "scholar" ],
+			"requiredSkill": ""
+		}
 	},
 }

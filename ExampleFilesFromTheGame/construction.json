@@ -14,17 +14,17 @@
 	},
 	"cleanWoodFloor": {
 		"costResources": ["wood"],
+		"costCounts": [10]
+	},
+	"medievalWoodFloor": {
+		"requiredTech": ["architectureI"],
+		"costResources": ["wood"],
 		"costCounts": [12]
 	},
 	"parquet": {
 		"requiredTech": ["architectureI"],
 		"costResources": ["wood"],
-		"costCounts": [12]
-	},
-	"medievalWoodFloor": {
-		"requiredTech": ["architectureII"],
-		"costResources": ["wood"],
-		"costCounts": [12]
+		"costCounts": [15]
 	},
 	"ornamentWoodFloor": {
 		"requiredTech": ["architectureII"],
@@ -54,6 +54,16 @@
 		"usesNumberRepetitionZ": true,
 		"usesSymmetryRepetitionX": true
 	},
+	"floorSquareWood": {
+		"costResources": ["wood"],
+		"costCounts": [20],
+		"requiredTech": ["architectureII"],
+	},
+	"floorArrowsWood": {
+		"costResources": ["wood"],
+		"costCounts": [20],
+		"requiredTech": ["architectureII"],
+	},
 	
 // Stone Floors
 //*************
@@ -76,48 +86,63 @@
 // Carpets
 //********
 
-	"carpetRoyal0_": {
+	"carpetRoyalBlue_": {
 		"requiredTech": ["architectureII"],
-		"costResources": ["cotton"],
-		"costCounts": [10]
+		"costResources": [ "cloth" ],
+		"costCounts": [20]
 	},
-	"carpetRoyal1_": {
+	"carpetRoyalRed_": {
 		"requiredTech": ["architectureII"],
-		"costResources": ["cotton"],
-		"costCounts": [10]
+		"costResources": [ "cloth" ],
+		"costCounts": [20]
 	},
 	"carpetScales0_": {
 		"requiredTech": ["architectureI"],
-		"costResources": ["cotton"],
+		"costResources": [ "cloth" ],
 		"costCounts": [10]
 	},
 	"carpetScales1_": {
 		"requiredTech": ["architectureI"],
-		"costResources": ["cotton"],
+		"costResources": [ "cloth" ],
 		"costCounts": [10]
 	},
 	"carpetChildNight_": {
 		"requiredTech": ["architectureI"],
-		"costResources": ["cotton"],
-		"costCounts": [10]
+		"costResources": [ "cloth" ],
+		"costCounts": [14]
 	},
 	"carpetChildCircles_": {
 		"requiredTech": ["architectureI"],
-		"costResources": ["cotton"],
-		"costCounts": [10]
+		"costResources": [ "cloth" ],
+		"costCounts": [12]
+	},
+	"carpetCubes": {
+		"requiredTech": ["architectureII"],
+		"costResources": [ "cloth" ],
+		"costCounts": [15]
+	},
+	"carpetTriangles": {
+		"requiredTech": ["architectureII"],
+		"costResources": [ "cloth" ],
+		"costCounts": [15]
 	},
 
 
 // Paths
 //******
 	"pathStoneRound": {
-		"requiredTech": ["decoration"],
+		"requiredTech": ["architectureI"],
 		"costResources": ["stone"],
 		"costCounts": [5],
 	},
 	"pathDirtFull": {
 		"costResources": ["wood"],
 		"costCounts": [5],
+	},
+	"floorStoneCobbles": {
+		"requiredTech": ["architectureII"],
+		"costResources": ["stone"],
+		"costCounts": [12]
 	},
 },
 
@@ -195,27 +220,27 @@
 // Hybrid Walls
 //*************
 
-	"fachwerk0Wall": {
+	"fachwerkWall0": {
 		"requiredTech": ["architectureII"],
 		"costResources": ["wood", "stone"],
 		"costCounts": [15, 10],
 		"usesSymmetryRepetition": true,
 		"health": 14,
 	},
-	"fachwerk1Wall": {
+	"fachwerkWall1": {
 		"requiredTech": ["architectureII"],
 		"costResources": ["wood", "stone"],
 		"costCounts": [15, 10],
 		"usesSymmetryRepetition": true,
 		"health": 14,
 	},
-	"fachwerk2Wall": {
+	"fachwerkWall2": {
 		"requiredTech": ["architectureII"],
 		"costResources": ["wood", "stone"],
 		"costCounts": [15, 10],
 		"health": 14,
 	},
-	"fachwerk3Wall": {
+	"fachwerkWall3": {
 		"requiredTech": ["architectureII"],
 		"costResources": ["wood","stone"],
 		"costCounts": [15, 10],
@@ -246,7 +271,7 @@
 	},
 	"fenceWoodLogLeather": {
 		"requiredTech": ["decoration"],
-		"costResources": ["wood", "cotton"],
+		"costResources": ["wood", "cloth"],
 		"costCounts": [8, 5],
 		"usesNumberRepetition": true,
 		"isFence": true,
@@ -304,7 +329,7 @@
 //***************
 	"palisade": {
 		"costResources": ["wood"],
-		"costCounts": [10],
+		"costCounts": [20],
 		"isFortification": true,
 		"wallHeightOverride": 2.6,
 		"wallThicknessOverride" : 0.5,
@@ -313,7 +338,7 @@
 	},
 	"woodWallDefense0": {
 		"costResources": ["wood"],
-		"costCounts": [15],
+		"costCounts": [30],
 		"requiredTech": ["architectureI"],
 		"isFortification": true,
 		"wallHeightOverride": 2.3,
@@ -323,7 +348,7 @@
 	},
 	"stoneWallDefense0": {
 		"costResources": ["stone"],
-		"costCounts": [20],
+		"costCounts": [40],
 		"requiredTech": ["masonry"],
 		"isFortification": true,
 		"wallHeightOverride": 2.4,
@@ -333,7 +358,7 @@
 	},
 	"stoneWallDefense1": {
 		"costResources": ["stone"],
-		"costCounts": [30],
+		"costCounts": [60],
 		"requiredTech": ["architectureII"],
 		"isFortification": true,
 		"wallHeightOverride": 2.4,

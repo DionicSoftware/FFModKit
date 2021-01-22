@@ -2,11 +2,12 @@
     // PLAYER EXPERIENCE
     "cameraSpeed": 5.6,
     "cameraSpeedKeyboard": 2.0,
-    "cameraRotationXLowerLimit": 0,
-    "cameraRotationXUpperLimit": 0,
+    "cameraRotationXLowerLimit": -8,
+    "cameraRotationXUpperLimit": 8,
     "cameraZoomMinimum": 0.1,
     "cameraZoomMaximum": 1.4,
     "defaultTimeToNotificationVanish": 90,
+    "motionSicknessReduction": false,
 
     // GAME RULES
     "instantFurnitureMovement": false,
@@ -16,13 +17,15 @@
     "daysPerSeason": 5,
     "tradeDiscountPercentage": 0.15,
     "buildingRefundPercentage": 0.333,
-	"maxColonists": 13,
+	  "maxColonists": 13,
 
     // HUMANS
     "humanMaxHealth": 100,
     "humanEnergyDecreaseRate": 1,
     "humanHungerRate": 1,
     "thoughtsDesiredFoodForWinter": 15,
+    "humanIconDisappearAfterDeath": 35,
+    "humanCorpseToSkeleton": 3000,
 
     "satisfactionPointCostMaxHealth": 2,
     "satisfactionPointCostCureIllness": 2,
@@ -41,6 +44,8 @@
     "diplomacyFriendlyRelationsThreshold": 25,
     "diplomacyAttackOnSightRelationsThreshold": -10,
     "diplomacyTributeDenialRelationsThreshold": -35,
+    "diplomacyHelpDefenseCooldownTime": 4200,
+    "diplomacyHelpDefenseDurationTime": 500,
 
     // FACTIONS
 
@@ -91,5 +96,7 @@
     "lazyDayEventDurationDays": 500,
     "notWorkignColonistEventDurationDays": 700,
 
-    "partyCostCoins": 100
+    "partyCostCoins": 100,
+
+    "tameModifier":  2.0,
 }

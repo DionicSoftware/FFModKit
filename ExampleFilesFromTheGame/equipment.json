@@ -53,6 +53,7 @@
 		"isAnimated": false,
 		"storageShape": "onehanded",
 		"defaultPrice": 150,
+		"buyProbability": 1,
 	},
 	"cutlassCaptain": {
 		"requiredSkillName": "fightMetalSwords",
@@ -63,6 +64,7 @@
 		"isAnimated": false,
 		"storageShape": "onehanded",
 		"defaultPrice": 350,
+		"buyProbability": 1
 	},
 
 	"swordIronTraderGuard": {
@@ -360,7 +362,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "bowmaker",
-				"inputResources": ["wood", "cotton"],
+				"inputResources": ["wood", "cloth"],
 				"inputCounts": [70, 15],
 				"productionTime": 180
 			}
@@ -386,7 +388,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "forge",
-				"inputResources": ["ironOre", "cotton"],
+				"inputResources": ["ironOre", "cloth"],
 				"inputCounts": [60, 20],
 				"productionTime": 400
 			}
@@ -430,7 +432,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton", "ironOre"],
+				"inputResources": ["cloth", "ironOre"],
 				"inputCounts": [40, 20],
 				"productionTime": 300
 			}
@@ -465,7 +467,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton"],
+				"inputResources": ["cloth"],
 				"inputCounts": [40],
 				"productionTime": 200
 			}
@@ -489,7 +491,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton"],
+				"inputResources": ["cloth"],
 				"inputCounts": [40],
 				"productionTime": 200
 			}
@@ -510,7 +512,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton", "ironOre"],
+				"inputResources": ["cloth", "ironOre"],
 				"inputCounts": [40, 20],
 				"productionTime": 300
 			}
@@ -531,7 +533,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton"],
+				"inputResources": ["cloth"],
 				"inputCounts": [30],
 				"productionTime": 180
 			}
@@ -553,7 +555,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton"],
+				"inputResources": ["cloth"],
 				"inputCounts": [60],
 				"productionTime": 250
 			}
@@ -575,7 +577,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton"],
+				"inputResources": ["cloth"],
 				"inputCounts": [30],
 				"productionTime": 180
 			}
@@ -595,7 +597,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton"],
+				"inputResources": ["cloth"],
 				"inputCounts": [60],
 				"productionTime": 250
 			}
@@ -617,7 +619,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton"],
+				"inputResources": ["cloth"],
 				"inputCounts": [30],
 				"productionTime": 180
 			}
@@ -637,7 +639,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton", "ironOre"],
+				"inputResources": ["cloth", "ironOre"],
 				"inputCounts": [40, 20],
 				"productionTime": 300
 			}
@@ -659,7 +661,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton"],
+				"inputResources": ["cloth"],
 				"inputCounts": [30],
 				"productionTime": 180
 			}
@@ -679,7 +681,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton", "coins"],
+				"inputResources": ["cloth", "coins"],
 				"inputCounts": [60, 40],
 				"productionTime": 300
 			}
@@ -702,7 +704,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton"],
+				"inputResources": ["cloth"],
 				"inputCounts": [40],
 				"productionTime": 180
 			}
@@ -722,7 +724,7 @@
 		"productionDescriptions": [
 			{
 				"productionFurniture": "tailor",
-				"inputResources": ["cotton", "coins"],
+				"inputResources": ["cloth", "coins"],
 				"inputCounts": [60, 40],
 				"productionTime": 300
 			}

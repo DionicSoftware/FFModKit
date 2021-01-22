@@ -209,4 +209,14 @@
 		"locationX": 6,
 		"locationY": 4
 	},
+	// Tier VIII
+	//*********
+
+	"shipBuilding": {
+		"crystalCost": 200,
+		"scrollCost": 40,
+		"predecessors": ["strongWatchtowers", "weaponForging", "armorForging", "grainProcessing"],
+		"locationX": 7,
+		"locationY": 2
+	}
 }
