@@ -49,7 +49,7 @@ ExampleScriptMod is a basic mod that uses C# to change the game's behaviour.
 
 ## LICENSE
 
-Our [EULA] applies.
+Our [EULA](https://dionicsoftware.com/eula.html) applies.
 You  may use the contents of this repository to create mods for our games.
 You may also use them to educate yourself about gamedev and see how we did it.
 You may not distribute the contents of this repository yourself. You may share links to the repository.
