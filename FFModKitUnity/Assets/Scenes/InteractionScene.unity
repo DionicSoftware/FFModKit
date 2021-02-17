@@ -94,8 +94,9 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -127,11 +128,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 389738954}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: b598fd1546408384ebb0b78610bd4ccb,
-        type: 3}
-      propertyPath: m_Name
-      value: workingColonist
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b598fd1546408384ebb0b78610bd4ccb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -187,6 +183,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: b598fd1546408384ebb0b78610bd4ccb,
+        type: 3}
+      propertyPath: m_Name
+      value: workingColonist
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b598fd1546408384ebb0b78610bd4ccb, type: 3}
 --- !u!1001 &389738953
@@ -196,11 +197,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 19d7ca949cee2a845a9ad9596be9e78e,
-        type: 3}
-      propertyPath: m_Name
-      value: laserSwordWorkbench
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 19d7ca949cee2a845a9ad9596be9e78e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -256,6 +252,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 19d7ca949cee2a845a9ad9596be9e78e,
+        type: 3}
+      propertyPath: m_Name
+      value: laserSwordWorkbench
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19d7ca949cee2a845a9ad9596be9e78e, type: 3}
 --- !u!4 &389738954 stripped
@@ -289,8 +290,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
