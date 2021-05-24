@@ -45,3 +45,14 @@ ExampleScriptMod is a basic mod that uses C# to change the game's behaviour.
 6. A new dll file has been compiled and moved into `ExampleScriptMod\ExampleScript\bin\Debug\netstandard2.0\ExampleScriptMod.dll`.
 7. Copy only `ExampleScriptMod.dll` into your mod directory. Founders' Fortune will now load the dll, look for any classes that inherit from `Mod` and start them with the game.
 8. Start Founders' Fortune and see if the mod displays messages each time you click on something.
+
+
+## LICENSE
+
+Our [EULA](https://dionicsoftware.com/eula.html) applies.
+You  may use the contents of this repository to create mods for our games.
+You may also use them to educate yourself about gamedev and see how we did it.
+You may not distribute the contents of this repository yourself. You may share links to the repository.
+You may not use the contents of this repository for other projects or uses besides those expressly permitted above.
+
+If you have any questions contact me at daniel@dionicsoftware.com.
