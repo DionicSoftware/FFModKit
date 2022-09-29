@@ -1,0 +1,371 @@
+{
+	"None": {
+        "defaultPrice": 0, 
+        "isUntradable": true, 
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "Apple": {
+        "defaultPrice": 2,
+        "sellProbability": 1,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "Tomato": {
+        "defaultPrice": 1.5,
+        "buyProbability": 1,
+        "sellProbability": 1,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "Pumpkin": {
+        "defaultPrice": 3,
+        "buyProbability": 1,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "Potato": {
+        "defaultPrice": 1.5,
+        "buyProbability": 1,
+        "sellProbability": 1,
+        "typicalTradeAmount": 30,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "Strawberry": {
+        "defaultPrice": 3.5,
+        "sellProbability": 1,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "Wheat": {
+        "defaultPrice": 4,
+        "buyProbability": 1,
+        "sellProbability": 1,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "BakedApple": {
+        "defaultPrice": 6,
+        "typicalTradeAmount": 10,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "BakedPotato": {
+        "defaultPrice": 5.5,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "BakedTomato": {
+        "defaultPrice": 5.5,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "PumpkinStew": {
+        "defaultPrice": 10,
+        "buyProbability": 1,
+        "sellProbability": 1,
+        "typicalTradeAmount": 10,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "MeatAndPotatoes": {
+        "defaultPrice": 12,
+        "buyProbability": 1,
+        "sellProbability": 1,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "FruitSalad": {
+        "defaultPrice": 11,
+        "buyProbability": 1,
+        "typicalTradeAmount": 10,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "Bread": {
+        "defaultPrice": 15,
+        "buyProbability": 1,
+        "sellProbability": 1,
+        "typicalTradeAmount": 30,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "StrawberryCake": {
+        "defaultPrice": 20,
+        "buyProbability": 1,
+        "typicalTradeAmount": 5,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "AppleStrudel": {
+        "defaultPrice": 20,
+        "buyProbability": 1,
+        "sellProbability": 1,
+        "typicalTradeAmount": 10,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    
+    "HealingPlantCultivated": {
+        "defaultPrice": 15,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "HealingPlantWild": {
+        "defaultPrice": 15,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "HealingPotion": {
+        "defaultPrice": 100,
+        "buyProbability": 3,
+        "sellProbability": 3,
+        "typicalTradeAmount": 5,
+        "defaultStockpile": 10,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "Medicine": {
+        "defaultPrice": 50,
+        "buyProbability": 3,
+        "sellProbability": 3,
+        "typicalTradeAmount": 5,
+        "defaultStockpile": 10,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "IronOre": {
+        "defaultPrice": 5,
+        "buyProbability": 3,
+        "sellProbability": 1,
+        "typicalTradeAmount": 40,
+        "defaultStockpile": 10,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "Stone": {
+        "defaultPrice": 0.6,
+        "buyProbability": 1,
+        "sellProbability": 1,
+        "typicalTradeAmount": 200,
+        "defaultStockpile": 50,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "Wood": {
+        "defaultPrice": 0.3,
+        "buyProbability": 1,
+        "sellProbability": 1,
+        "typicalTradeAmount": 200,
+        "defaultStockpile": 200,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "Cotton": {
+        "defaultPrice": 2,
+        "typicalTradeAmount": 70,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "Crystal": {
+        "defaultPrice": 8,
+        "typicalTradeAmount": 20,
+        "defaultStockpile": 10,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "Coins": {
+        "defaultPrice": 1,
+        "isUntradable": true,
+        "defaultStockpile": 150,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "Scroll": {
+        "defaultPrice": 100,
+        "sellProbability": 9,
+        "typicalTradeAmount": 10,
+        "defaultStockpile": 3,
+        "childResources": [],
+        "isAlwaysAvailable": true
+    },
+    "Beer": {
+        "defaultPrice": 15,
+        "buyProbability": 1,
+        "sellProbability": 1,
+        "typicalTradeAmount": 25,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "Water": {
+        "defaultPrice": 10,
+        "isUntradable": true,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "ElixirOfYouth": {
+        "defaultPrice": 600,
+        "typicalTradeAmount": 1,
+        "defaultStockpile": 10000000,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "Wool": {
+        "defaultPrice": 2.2,
+        "typicalTradeAmount": 70,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "Cloth": {
+        "defaultPrice": 3,
+        "typicalTradeAmount": 70,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "RawMeat": {
+        "defaultPrice": 6,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "Milk": {
+        "defaultPrice": 3,
+        "buyProbability": 1,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "GrilledMeat": {
+        "defaultPrice": 1,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "Cheese": {
+        "defaultPrice": 9,
+        "buyProbability": 1,
+        "sellProbability": 1,
+        "typicalTradeAmount": 20,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+
+    "FoodRawEdible": {
+        "defaultPrice": 1,
+        "childResources": ["Apple", "Tomato", "Pumpkin", "Potato","Strawberry"],
+        "isAlwaysAvailable": false
+    },
+
+    "SimpleMeal": {
+        "defaultPrice": 1,
+        "childResources": ["BakedApple", "BakedPotato", "BakedTomato", "GrilledMeat"],
+        "isAlwaysAvailable": false
+    },
+    "GoodMeal": {
+        "defaultPrice": 1,
+        "childResources": ["PumpkinStew", "MeatAndPotatoes", "FruitSalad", "Cheese"],
+        "isAlwaysAvailable": false
+    },
+    "BakedMeal": {
+        "defaultPrice": 1,
+        "childResources": ["Bread", "StrawberryCake", "AppleStrudel"],
+        "isAlwaysAvailable": false
+    },
+    
+    "HealingPlant": {
+        "defaultPrice": 1,
+        "defaultStockpile": 10,
+        "childResources": ["HealingPlantCultivated", "HealingPlantWild"],
+        "isAlwaysAvailable": false
+    },
+    
+    "Textiles": {
+        "defaultPrice": 1,
+        "defaultStockpile": 100,
+        "childResources": ["Cotton", "Wool", "Cloth"],
+        "isAlwaysAvailable": false
+    },
+
+    "MealType": {
+        "defaultPrice": 1,
+        "childResources": ["BakedMeal", "GoodMeal", "SimpleMeal", "FoodRawEdible"], // ordered by quality
+        "isAlwaysAvailable": false
+    },
+    
+    "FoodRaw": {
+        "defaultPrice": 1,
+        "defaultStockpile": 120,
+        "childResources": ["Apple", "Tomato", "Pumpkin", "Potato", "Strawberry", "Wheat", "RawMeat", "Milk"],
+        "isAlwaysAvailable": false
+    },
+    "FoodCooked": {
+        "defaultPrice": 1,
+        "defaultStockpile": 20,
+        "childResources": ["BakedApple", "BakedPotato", "BakedTomato", "GrilledMeat", "PumpkinStew", "MeatAndPotatoes", 
+            "FruitSalad", "Cheese", "Bread", "StrawberryCake", "AppleStrudel"],
+        "isAlwaysAvailable": false
+    },
+    "FoodEdible": {
+        "defaultPrice": 1,
+        "childResources": ["Apple", "Tomato", "Pumpkin", "Potato", "Strawberry", "BakedApple", "BakedPotato", "BakedTomato", 
+            "GrilledMeat", "PumpkinStew", "MeatAndPotatoes", "FruitSalad", "Cheese", "Bread", "StrawberryCake", "AppleStrudel"],
+        "isAlwaysAvailable": false
+    },
+    
+    "FoodMeat": {
+        "defaultPrice": 1,
+        "childResources": ["RawMeat", "GrilledMeat", "MeatAndPotatoes"],
+        "isAlwaysAvailable": false
+    },
+    "FoodDairy": {
+        "defaultPrice": 1,
+        "childResources": ["Milk", "Cheese", "StrawberryCake"],
+        "isAlwaysAvailable": false
+    },
+    "Misc": {
+        "defaultPrice": 1,
+        "childResources": ["BookSimple", "BookCommon", "BookGood", "BookGreat", "BookAmazing", "ElixirOfYouth"],
+        "isAlwaysAvailable": false
+    },
+    "BookSimple": {
+        "defaultPrice": 5,
+        "buyProbability": 1,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "BookCommon": {
+        "defaultPrice": 10,
+        "buyProbability": 1,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "BookGood": {
+        "defaultPrice": 20,
+        "buyProbability": 1,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "BookGreat": {
+        "defaultPrice": 100,
+        "buyProbability": 1,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    },
+    "BookAmazing": {
+        "defaultPrice": 200,
+        "buyProbability": 1,
+        "childResources": [],
+        "isAlwaysAvailable": false
+    }
+}

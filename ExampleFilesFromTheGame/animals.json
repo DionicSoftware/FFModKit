@@ -1,0 +1,71 @@
+{
+	"sheep": {
+		"tameProgressMinimum": 0.06,
+		"tameProgressMaximum": 0.08,
+		"tameThreshold": 0.3,
+		"tameLossPerDayWhenTamed": 0.02,
+		"tameLossPerDayWhenUntamed": 0.1,
+
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 250,
+
+		"birthsPerCouplePerTenDays": 1.0,
+		"childrenPerBirth": 1,
+		"daysToAdult": 12,
+
+		"canGrowPelt": true,
+		"timePeltGrowMin": 1200,
+		"timePeltGrowMax": 1800,
+		"peltObjectName": "wool",
+		"woolYield":  8,
+
+		"meatYield": 8,
+	},
+	
+	"cow": {
+		"tameProgressMinimum": 0.03,
+		"tameProgressMaximum": 0.04,
+		"tameThreshold": 0.3,
+		"tameLossPerDayWhenTamed": 0.04,
+		"tameLossPerDayWhenUntamed": 0.2,
+
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 350,
+
+		"birthsPerCouplePerTenDays": 0.8,
+		"childrenPerBirth": 1,
+		"daysToAdult": 20,
+
+    "canMilk": true,
+    "timeMilkRegenMin": 500,
+    "timeMilkRegenMax": 800,
+    "milkYield": 6,
+
+		"meatYield": 30,
+	},
+
+	"pig": { 
+		"tameProgressMinimum": 0.04,
+		"tameProgressMaximum": 0.05,
+		"tameThreshold": 0.3,
+		"tameLossPerDayWhenTamed": 0.03,
+		"tameLossPerDayWhenUntamed": 0.15,
+
+		"buyProbability": 1,
+		"sellProbability": 1,
+		"typicalTradeAmount": 5,
+		"defaultPrice": 200,
+
+		"birthsPerCouplePerTenDays": 1.5,
+		"childrenPerBirth": 1,
+		"daysToAdult": 10,
+
+		"canGrowPelt": false,
+
+		"meatYield": 20,
+	}
+}

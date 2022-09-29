@@ -22,6 +22,7 @@
     // HUMANS
     "humanMaxHealth": 100,
     "humanEnergyDecreaseRate": 1,
+    "humanFunDecreaseRate": 1,
     "humanHungerRate": 1,
     "thoughtsDesiredFoodForWinter": 15,
     "humanIconDisappearAfterDeath": 35,
@@ -80,8 +81,8 @@
     // MIGRANTS
     "migrantsDaysToNextVisitTinyColony": 1,
     "migrantsDaysToNextVisitSmallColony": 3,
-    "migrantsDaysToNextVisitMediumColony": 8,
-    "migrantsDaysToNextVisitLargeColony": 20,
+    "migrantsDaysToNextVisitMediumColony": 6,
+    "migrantsDaysToNextVisitLargeColony": 9,
 
     // GAME EVENT MANAGEMENT
     "daysToNextBadEventMinimum": 9,
